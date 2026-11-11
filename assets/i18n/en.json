@@ -1,6 +1,5 @@
 {
   "_comment": "English texts (British English). Values may contain simple inline HTML (a, strong, em, code, br). pl.json and tr.json must have the same keys. After editing, run: python3 tools/build.py",
-
   "common.skip": "Skip to content",
   "common.navLabel": "Main",
   "common.footerNavLabel": "Footer",
@@ -18,7 +17,6 @@
   "common.storeApple": "App Store",
   "common.storeAppleSmall": "Download on the",
   "common.storeSoon": "Coming soon to the App Store.",
-
   "home.metaTitle": "Polish Footprints: Istanbul – Polish history walks and map app",
   "home.metaDesc": "38 places and 8 self-guided walks that trace Polish history in Istanbul: Polonezköy (Adampol), the Adam Mickiewicz Museum, envoys at the sultan's court, Roxelana, the 1939 gold and John Paul II. Stories in Polish, English and Turkish, for iPhone and iPad.",
   "home.ogTitle": "Polish Footprints: Istanbul",
@@ -31,7 +29,6 @@
   "home.stat2": "<strong>8</strong> walks",
   "home.stat3": "<strong>86</strong> pictures",
   "home.stat4": "<strong>3</strong> languages",
-
   "home.themesTitle": "Nine chapters of Polish history",
   "home.themesLead": "Istanbul has a Polish story, and most visitors walk straight past it. More than six centuries of Polish–Turkish history, told place by place. Every place on the map belongs to one of these themes.",
   "home.t1Title": "Adampol – Polonezköy",
@@ -52,7 +49,6 @@
   "home.t8Body": "In September 1939 the gold reserves of the Bank of Poland passed through Istanbul: from a British ship anchored off Kabataş to a train at Haydarpaşa bound for Beirut.",
   "home.t9Title": "Polish Istanbul today",
   "home.t9Body": "The villagers of Polonezköy, the Polish Mass at St Anthony's and the Consulate General in Maslak, today's address of Polish diplomacy on the Bosphorus.",
-
   "home.insideTitle": "What's inside",
   "home.insideLead": "Every place sits on the map, grouped by theme. Tap it for the story, the pictures, the people involved and a short note on visiting.",
   "home.f1Title": "38 places with their stories",
@@ -67,7 +63,6 @@
   "home.f5Body": "Tap Directions to walk to a place, or hand a whole walk to your maps app with one button.",
   "home.f6Title": "Your location stays on your phone",
   "home.f6Body": "Distances and the “you are here” dot are worked out on the phone. No account, no ads, no tracking.",
-
   "home.walksTitle": "Eight walks",
   "home.walksLead": "Each walk links places that belong to one story. The times are rough guides for walking and looking, without museum visits.",
   "home.freeTag": "Free",
@@ -88,7 +83,6 @@
   "home.w8Name": "John Paul II in Istanbul, 1979",
   "home.w8Meta": "4 stops · about 3 h 30 min · Harbiye, İstiklal, Fener and Kumkapı, by public transport",
   "home.walksNote": "Opening hours change – each place in the app tells you what to check before you go.",
-
   "home.freeTitle": "Start free, unlock once",
   "home.freeLead": "Download the app for free and explore before you decide.",
   "home.freeCardTitle": "Free",
@@ -102,7 +96,6 @@
   "home.unlock4": "Directions to every place",
   "home.unlock5": "Future content updates included",
   "home.unlockNote": "One purchase – no subscription, no ads and no account. The App Store shows the price in your currency.",
-
   "home.screensTitle": "A look inside the app",
   "home.screensLead": "Real screens from the app, in its dark and light themes.",
   "home.faqTitle": "Questions and answers",
@@ -124,10 +117,8 @@
   "home.faq8a": "No. There is no account, no advertising and no tracking. The app sends anonymous usage statistics that you can switch off in Settings; the <a href=\"privacy/\">privacy policy</a> lists exactly what they contain.",
   "home.faq9q": "How do I get to Polonezköy (Adampol)?",
   "home.faq9a": "The village lies on the Asian side, in the forests of Beykoz, about 25 km from Sultanahmet as the crow flies. There is no rail or metro: the simplest way is a taxi from Kavacık or Beykoz (about 15–20 minutes). City buses also run there – check the current lines before you set off. The village itself can be walked in about two hours; weekdays are much quieter than weekends.",
-
   "home.ctaTitle": "Take Polish Istanbul with you",
   "home.ctaLead": "38 places, 8 walks, one map – free to try.",
-
   "privacy.metaTitle": "Privacy policy – Polish Footprints: Istanbul",
   "privacy.metaDesc": "How the Polish Footprints: Istanbul app handles location, anonymous usage statistics, purchases and maps. No account, no ads, no tracking.",
   "privacy.h1": "Privacy policy",
@@ -144,14 +135,11 @@
   "privacy.factContact": "Contact",
   "privacy.factDate": "Effective",
   "privacy.factDateV": "11 November 2026",
-
   "privacy.whoTitle": "1. Who is responsible",
   "privacy.whoBody": "The app is published by thebarnapp, the sole proprietorship of Mehmet Gökhan Memik in Istanbul, Türkiye. He is responsible for the data processing described here. For any question or request, write to <a href=\"mailto:app@save-all.com\">app@save-all.com</a>.",
-
   "privacy.locTitle": "2. Your location",
   "privacy.locBody": "The app never asks for your location when it starts. It asks only when you tap to see distances, and only for access <strong>while you use the app</strong> – never in the background. If you allow it, your position is used <strong>only on your phone</strong>: to show the “you are here” dot on the map and to measure the distance to each place. Your coordinates are never stored and never sent to us or to anyone else.",
   "privacy.locBody2": "The only thing derived from your location that leaves the phone is a yes/no/unknown value in the usage statistics (section 3): whether the phone is within about 30 km of central Istanbul. In the App Store privacy details this is listed as <strong>approximate location</strong>, used for analytics only, not linked to you and not used for tracking. The app works fully without location access; you can allow or withdraw it at any time in your phone's settings.",
-
   "privacy.anaTitle": "3. Anonymous usage statistics (TelemetryDeck)",
   "privacy.anaBody": "To learn which places and features are used, the app sends anonymous usage statistics to <strong>TelemetryDeck GmbH</strong>, a privacy-focused analytics service based in Germany (EU). The statistics are short signals such as “a place page was opened” or “a walk was started in Maps”. They contain no name, no e-mail address, no search text and no location coordinates. Every value comes from a fixed list in the app; anything else is sent as “other”.",
   "privacy.anaWhatTitle": "What a signal can contain",
@@ -180,50 +168,36 @@
   "privacy.anaOptTitle": "Switching it off",
   "privacy.anaOpt": "Open the app's <strong>Settings</strong> and switch off <strong>“Share anonymous usage statistics”</strong>. The app then sends one last signal saying that statistics were switched off, stops the analytics software and sends nothing more. The choice is saved on the phone; while it is off, the analytics software is not started at all.",
   "privacy.anaBasis": "Legal basis: our legitimate interest in understanding, in anonymous form, how the guide is used so that we can improve it (Art. 6(1)(f) GDPR), with the right to object at any time through the switch above.",
-
   "privacy.buyTitle": "4. Purchases",
   "privacy.buyBody": "The one-time unlock is sold and paid through the Apple App Store, under Apple's own terms and privacy policy. We never see your name, payment details or Apple Account. The app only receives the store's confirmation that the unlock was bought, reads from it whether it was a real purchase or a test, and remembers the unlock on your phone.",
-
   "privacy.mapTitle": "5. Maps",
   "privacy.mapBody": "The street map is made of map tiles loaded from OpenStreetMap's servers. Like any website, those servers see your IP address and the requested map area when they deliver a tile. Their handling is described in the <a href=\"https://osmfoundation.org/wiki/Privacy_Policy\" rel=\"noopener\">OpenStreetMap Foundation privacy policy</a>.",
-
   "privacy.picTitle": "6. Pictures and stories",
   "privacy.picBody": "All pictures and stories are bundled inside the app. Viewing them sends no request anywhere.",
-
   "privacy.handTitle": "7. Directions in Apple Maps or Google Maps",
   "privacy.handBody": "When you tap Directions or start a walk in Maps, the app opens Apple Maps, Google Maps or a web browser and passes it the destination – the place or the stops of the walk. From then on, that app handles the route under its own privacy policy (<a href=\"https://www.apple.com/legal/privacy/\" rel=\"noopener\">Apple</a>, <a href=\"https://policies.google.com/privacy\" rel=\"noopener\">Google</a>).",
-
   "privacy.connTitle": "8. Other connections",
   "privacy.connBody": "Apart from the statistics and the map, the app connects to the internet only in these cases:",
   "privacy.conn1": "<strong>App version check:</strong> when a copy from the App Store starts, it asks Apple's public App Store lookup for the version number currently on sale. The request contains only the app's store number, no data about you; Apple sees the connection's IP address. The answer helps to recognise copies run by App Review (section 3).",
   "privacy.conn2": "<strong>“Rate the app” and links:</strong> these open the App Store page or a website (for example the sources in Credits &amp; licences) only when you tap them.",
   "privacy.conn3": "<strong>“Share the app”:</strong> opens the iPhone share sheet with a short text and a link to this website. You choose whether and where to send it; the app does not see the recipient.",
-
   "privacy.deviceTitle": "9. What stays on your phone",
   "privacy.deviceBody": "Your language and theme, the maps app you chose, the places you mark as visited or favourite, the statistics switch, whether you have seen the “Free: start here” hint and the record that you bought the unlock are saved only on your phone. Use “Clear” in the settings or delete the app to remove them.",
-
   "privacy.noTitle": "10. No accounts, no ads, no tracking",
   "privacy.noBody": "There is no sign-in and no advertising. The app does not ask for your name or e-mail, does not use the advertising identifier and does not track you across other apps or websites. We do not sell or share data.",
-
   "privacy.webTitle": "11. This website",
   "privacy.webBody": "This website uses no cookies, no analytics and no third-party scripts; its fonts are served from the site itself. Your language and theme choice are saved in your browser's local storage and never sent. The site is hosted on GitHub Pages; GitHub processes server logs, including IP addresses, as described in the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">GitHub privacy statement</a>.",
-
   "privacy.kidsTitle": "12. Age of users",
   "privacy.kidsBody": "The app is a history guide for a general audience and is not directed at children. It collects no personal data from anyone, children included.",
-
   "privacy.rightsTitle": "13. Your rights",
   "privacy.rightsBody": "Depending on where you live (for example under the GDPR, the UK GDPR or Turkey's KVKK), you have the right to access, correct or delete personal data, to restrict or object to processing and to complain to a data protection authority (in Poland, the UODO). Because the statistics are anonymous, we cannot link them to you, but you can always switch them off. Write to <a href=\"mailto:app@save-all.com\">app@save-all.com</a> with any request.",
-
   "privacy.srcTitle": "14. Content sources and licences",
-  "privacy.srcBody": "The pictures come from <a href=\"https://commons.wikimedia.org/\" rel=\"noopener\">Wikimedia Commons</a> and are in the public domain (including CC0) or under Creative Commons licences (CC BY and CC BY-SA, versions 3.0 and 4.0). Every picture shows its author, source and licence under the image, and the full list is in the app under <strong>Settings › Credits &amp; licences</strong>. Every story lists its sources. Map data © <a href=\"https://www.openstreetmap.org/copyright\" rel=\"noopener\">OpenStreetMap contributors</a>, available under the Open Database License (ODbL). Fonts: Playfair Display and Lora, SIL Open Font License 1.1.",
-
+  "privacy.srcBody": "The pictures come from <a href=\"https://commons.wikimedia.org/\" rel=\"noopener\">Wikimedia Commons</a> and are in the public domain (including CC0) or under Creative Commons licences (CC BY and CC BY-SA, versions 3.0 and 4.0). Every picture shows its author, source and licence under the image, and the full list is in the app under <strong>Settings › Credits &amp; licences</strong>. Every story lists its sources. Map data © <a href=\"https://www.openstreetmap.org/copyright\" rel=\"noopener\">OpenStreetMap contributors</a>, available under the Open Database License (ODbL). Fonts: Playfair Display and Lora, SIL Open Font License 1.1. The App Store screenshots use the photo <a href=\"https://commons.wikimedia.org/wiki/File:Polonezk%C3%B6y_nature_panorama.jpg\" rel=\"noopener\">“Polonezköy nature panorama”</a> by Darwinek (CC BY-SA 3.0) as a background; the other backgrounds are in the public domain.",
   "privacy.changeTitle": "15. Changes",
   "privacy.changeBody": "If the app's handling of data changes, this page will be updated before the new version is released, and the effective date below will change.",
-
   "privacy.contactTitle": "16. Contact",
   "privacy.contactBody": "Mehmet Gökhan Memik (thebarnapp), Istanbul, Türkiye – <a href=\"mailto:app@save-all.com\">app@save-all.com</a>",
   "privacy.updated": "Effective date: 11 November 2026",
-
   "support.metaTitle": "Support – Polish Footprints: Istanbul",
   "support.metaDesc": "Help with Polish Footprints: Istanbul: restoring the unlock, offline use, location permission, directions in Apple Maps and Google Maps, language, theme and contact.",
   "support.h1": "Support",
