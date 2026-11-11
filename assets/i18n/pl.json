@@ -1,6 +1,5 @@
 {
   "_comment": "Teksty polskie. Klucze muszą być takie same jak w en.json; po zmianie uruchom: python3 tools/build.py (sprawdza klucze)",
-
   "common.skip": "Przejdź do treści",
   "common.navLabel": "Menu główne",
   "common.footerNavLabel": "Stopka",
@@ -10,7 +9,7 @@
   "common.langLabel": "Język",
   "common.themeToggle": "Przełącz motyw ciemny lub jasny",
   "common.brandSub": "Stambuł",
-  "common.footerAbout": "Polish Footprints: Istanbul to mapa i przewodnik po polskich śladach w Stambule na iPhone’a i iPada – po polsku, angielsku i turecku.",
+  "common.footerAbout": "Polskie ślady: Stambuł to mapa i przewodnik po polskich śladach w Stambule na iPhone’a i iPada – po polsku, angielsku i turecku.",
   "common.footerPublisher": "Wydawca: thebarnapp (Mehmet Gökhan Memik), Stambuł, Turcja.",
   "common.footerContact": "Kontakt: <a href=\"mailto:app@save-all.com\">app@save-all.com</a>",
   "common.footerSeries": "Część serii przewodników historycznych Footprints – zobacz też <a href=\"https://mgmemik.github.io/british-footprints-web/\">British Footprints: Istanbul</a>.",
@@ -18,10 +17,9 @@
   "common.storeApple": "App Store",
   "common.storeAppleSmall": "Pobierz w",
   "common.storeSoon": "Wkrótce w App Store.",
-
-  "home.metaTitle": "Polish Footprints: Istanbul – polskie ślady w Stambule: spacery i mapa",
+  "home.metaTitle": "Polskie ślady: Stambuł – spacery i mapa po polsku",
   "home.metaDesc": "38 miejsc i 8 spacerów śladami Polaków w Stambule: Adampol (Polonezköy), Muzeum Adama Mickiewicza, posłowie Rzeczypospolitej u sułtana, Roksolana, złoto z 1939 roku i Jan Paweł II. Historie po polsku, angielsku i turecku, na iPhone’a i iPada.",
-  "home.ogTitle": "Polish Footprints: Istanbul – polskie ślady w Stambule",
+  "home.ogTitle": "Polskie ślady: Stambuł – przewodnik po polskiej historii Stambułu",
   "home.ogDesc": "Mapa i przewodnik po polskim Stambule: 38 miejsc i 8 spacerów, od Adampola (Polonezköy) po Muzeum Mickiewicza – po polsku, angielsku i turecku.",
   "home.ogAlt": "Ikona aplikacji Polish Footprints – róża wiatrów z tulipanem na niebieskim kaflu przeciętym biało-czerwoną szarfą – i napis Polish Footprints, Istanbul",
   "home.eyebrow": "iPhone i iPad · po polsku, angielsku i turecku",
@@ -31,7 +29,6 @@
   "home.stat2": "<strong>8</strong> spacerów",
   "home.stat3": "<strong>86</strong> zdjęć i rycin",
   "home.stat4": "<strong>3</strong> języki",
-
   "home.themesTitle": "Dziewięć rozdziałów polskiej historii",
   "home.themesLead": "Stambuł ma swoją polską historię – a większość odwiedzających mija ją, nawet o tym nie wiedząc. Ponad sześć wieków dziejów polsko-tureckich, opowiedzianych miejsce po miejscu. Każde miejsce na mapie należy do jednego z tych tematów.",
   "home.t1Title": "Adampol – Polonezköy",
@@ -52,7 +49,6 @@
   "home.t8Body": "We wrześniu 1939 roku przez Stambuł przeszły rezerwy złota Banku Polskiego: z brytyjskiego statku zakotwiczonego przy Kabataşu do pociągu z dworca Haydarpaşa, jadącego do Bejrutu.",
   "home.t9Title": "Polski Stambuł dziś",
   "home.t9Body": "Mieszkańcy Polonezköy, polska msza u św. Antoniego i Konsulat Generalny RP w Maslaku – dzisiejszy adres polskiej dyplomacji nad Bosforem.",
-
   "home.insideTitle": "Co znajdziesz w aplikacji",
   "home.insideLead": "Każde miejsce jest na mapie, pogrupowane według tematu. Dotknij go, a zobaczysz historię, zdjęcia, związane z nim postacie i krótką wskazówkę, jak je zwiedzić.",
   "home.f1Title": "38 miejsc z historią",
@@ -67,7 +63,6 @@
   "home.f5Body": "Dotknij „Wskazówki dojazdu”, by dojść do wybranego miejsca, albo jednym przyciskiem przekaż cały spacer do aplikacji z mapami.",
   "home.f6Title": "Twoja lokalizacja zostaje w telefonie",
   "home.f6Body": "Odległości i kropka „tu jesteś” są wyliczane w telefonie. Bez konta, bez reklam, bez śledzenia.",
-
   "home.walksTitle": "Osiem spacerów",
   "home.walksLead": "Każdy spacer łączy miejsca jednej historii. Podane czasy są orientacyjne: obejmują drogę i oglądanie, bez zwiedzania muzeów.",
   "home.freeTag": "Za darmo",
@@ -88,7 +83,6 @@
   "home.w8Name": "Jan Paweł II w Stambule 1979",
   "home.w8Meta": "4 przystanki · ok. 3 godz. 30 min · Harbiye, İstiklal, Fanar i Kumkapı, komunikacją miejską",
   "home.walksNote": "Godziny otwarcia się zmieniają – przy każdym miejscu aplikacja podpowiada, co sprawdzić przed wyjściem.",
-
   "home.freeTitle": "Zacznij za darmo, odblokuj raz",
   "home.freeLead": "Pobierz aplikację bezpłatnie i rozejrzyj się, zanim zdecydujesz.",
   "home.freeCardTitle": "Za darmo",
@@ -102,10 +96,8 @@
   "home.unlock4": "Wskazówki dojazdu do każdego miejsca",
   "home.unlock5": "Przyszłe aktualizacje treści w cenie",
   "home.unlockNote": "Jeden zakup – bez subskrypcji, bez reklam i bez zakładania konta. Cenę w Twojej walucie pokazuje App Store.",
-
   "home.screensTitle": "Zajrzyj do aplikacji",
   "home.screensLead": "Prawdziwe ekrany aplikacji w motywie ciemnym i jasnym.",
-
   "home.faqTitle": "Pytania i odpowiedzi",
   "home.faq1q": "Czy to przewodnik do samodzielnego zwiedzania polskiego Stambułu?",
   "home.faq1a": "Tak. Osiem spacerów to trasy do samodzielnego przejścia, z ponumerowanymi przystankami i historią przy każdym z nich. Idziesz we własnym tempie, a aplikacja przekazuje przystanki do Map Apple lub Map Google, które prowadzą do celu.",
@@ -125,34 +117,29 @@
   "home.faq8a": "Nie. Nie ma konta, reklam ani śledzenia. Aplikacja wysyła anonimowe statystyki użycia, które możesz wyłączyć w Ustawieniach; <a href=\"privacy/\">polityka prywatności</a> wymienia dokładnie, co zawierają.",
   "home.faq9q": "Jak dojechać do Polonezköy (Adampola)?",
   "home.faq9a": "Wieś leży na azjatyckim brzegu, w lasach dzielnicy Beykoz, ok. 25 km w linii prostej od Sultanahmet. Nie dojeżdża tam kolej ani metro: najprościej wziąć taksówkę z Kavacık lub z Beykozu (ok. 15–20 minut). Kursują też autobusy miejskie – przed wyjazdem sprawdź aktualne linie. Wieś obejdziesz pieszo w około dwie godziny; w dzień powszedni jest tam znacznie spokojniej niż w weekend.",
-
   "home.ctaTitle": "Zabierz polski Stambuł ze sobą",
   "home.ctaLead": "38 miejsc, 8 spacerów, jedna mapa – na początek za darmo.",
-
-  "privacy.metaTitle": "Polityka prywatności – Polish Footprints: Istanbul",
-  "privacy.metaDesc": "Jak aplikacja Polish Footprints: Istanbul postępuje z lokalizacją, anonimowymi statystykami użycia, zakupami i mapami. Bez konta, bez reklam, bez śledzenia.",
+  "privacy.metaTitle": "Polityka prywatności – Polskie ślady: Stambuł",
+  "privacy.metaDesc": "Jak aplikacja Polskie ślady: Stambuł postępuje z lokalizacją, anonimowymi statystykami użycia, zakupami i mapami. Bez konta, bez reklam, bez śledzenia.",
   "privacy.h1": "Polityka prywatności",
-  "privacy.lead": "Aplikacja Polish Footprints: Istanbul jest zbudowana tak, by potrzebować jak najmniej danych. Nie ma konta, reklam ani śledzenia. Ta strona prostymi słowami wyjaśnia wszystko, co aplikacja i ta strona internetowa robią z danymi.",
+  "privacy.lead": "Aplikacja Polskie ślady: Stambuł jest zbudowana tak, by potrzebować jak najmniej danych. Nie ma konta, reklam ani śledzenia. Ta strona prostymi słowami wyjaśnia wszystko, co aplikacja i ta strona internetowa robią z danymi.",
   "privacy.summaryTitle": "W skrócie",
   "privacy.sum1": "Twoja lokalizacja jest używana tylko w telefonie i tylko wtedy, gdy korzystasz z aplikacji. Współrzędne nigdy nie są zapisywane ani wysyłane; statystyki mówią jedynie, czy telefon jest w Stambule (przybliżona lokalizacja).",
   "privacy.sum2": "Anonimowe statystyki użycia trafiają do TelemetryDeck (Niemcy). Bez imienia, adresu e-mail, wyszukiwanych słów i współrzędnych. Możesz je wyłączyć.",
   "privacy.sum3": "Zakupy obsługuje Apple. Nigdy nie widzimy Twoich danych płatniczych.",
   "privacy.sum4": "Bez konta, bez reklam, bez plików cookie, bez śledzenia w innych aplikacjach i na stronach internetowych.",
   "privacy.factApp": "Aplikacja",
-  "privacy.factAppV": "Polish Footprints: Istanbul (iPhone i iPad)",
+  "privacy.factAppV": "Polskie ślady: Stambuł (Polish Footprints: Istanbul) (iPhone i iPad)",
   "privacy.factWho": "Administrator",
   "privacy.factWhoV": "Mehmet Gökhan Memik, prowadzący jednoosobową działalność gospodarczą pod nazwą thebarnapp, Stambuł, Turcja",
   "privacy.factContact": "Kontakt",
   "privacy.factDate": "Obowiązuje od",
   "privacy.factDateV": "11 listopada 2026",
-
   "privacy.whoTitle": "1. Kto odpowiada za dane",
   "privacy.whoBody": "Aplikację wydaje thebarnapp – jednoosobowa działalność gospodarcza Mehmeta Gökhana Memika ze Stambułu (Turcja). To on odpowiada za opisane tu przetwarzanie danych. Z każdym pytaniem lub prośbą napisz na <a href=\"mailto:app@save-all.com\">app@save-all.com</a>.",
-
   "privacy.locTitle": "2. Twoja lokalizacja",
   "privacy.locBody": "Aplikacja nigdy nie pyta o lokalizację przy uruchomieniu. Pyta dopiero wtedy, gdy dotkniesz przycisku, by zobaczyć odległości, i tylko o dostęp <strong>podczas korzystania z aplikacji</strong> – nigdy w tle. Jeśli się zgodzisz, Twoje położenie jest używane <strong>wyłącznie w telefonie</strong>: do pokazania kropki „tu jesteś” na mapie i zmierzenia odległości do każdego miejsca. Twoje współrzędne nigdy nie są zapisywane ani wysyłane – ani nam, ani nikomu innemu.",
   "privacy.locBody2": "Jedyną informacją wywiedzioną z lokalizacji, która opuszcza telefon, jest wartość tak/nie/nieznane w statystykach użycia (punkt 3): czy telefon znajduje się w promieniu ok. 30 km od centrum Stambułu. W informacjach o prywatności w App Store figuruje to jako <strong>przybliżona lokalizacja</strong>, używana wyłącznie do analityki, niepowiązana z Tobą i niewykorzystywana do śledzenia. Aplikacja działa w pełni bez dostępu do lokalizacji; możesz go w każdej chwili przyznać lub cofnąć w ustawieniach telefonu.",
-
   "privacy.anaTitle": "3. Anonimowe statystyki użycia (TelemetryDeck)",
   "privacy.anaBody": "Aby wiedzieć, z których miejsc i funkcji się korzysta, aplikacja wysyła anonimowe statystyki użycia do <strong>TelemetryDeck GmbH</strong>, dbającej o prywatność usługi analitycznej z siedzibą w Niemczech (UE). Statystyki to krótkie sygnały, np. „otwarto stronę miejsca” albo „rozpoczęto spacer w Mapach”. Nie zawierają imienia, adresu e-mail, wyszukiwanych słów ani współrzędnych. Każda wartość pochodzi z zamkniętej listy w aplikacji; wszystko inne jest wysyłane jako „inne”.",
   "privacy.anaWhatTitle": "Co może zawierać sygnał",
@@ -181,52 +168,38 @@
   "privacy.anaOptTitle": "Jak to wyłączyć",
   "privacy.anaOpt": "Otwórz <strong>Ustawienia</strong> w aplikacji i wyłącz <strong>„Udostępniaj anonimowe statystyki użycia”</strong>. Aplikacja wyśle wtedy jeden ostatni sygnał z informacją o wyłączeniu statystyk, zatrzyma oprogramowanie analityczne i nie wyśle już nic więcej. Wybór jest zapisywany w telefonie; dopóki statystyki są wyłączone, oprogramowanie analityczne w ogóle się nie uruchamia.",
   "privacy.anaBasis": "Podstawa prawna: nasz prawnie uzasadniony interes w poznaniu, w anonimowej formie, sposobu korzystania z przewodnika, abyśmy mogli go ulepszać (art. 6 ust. 1 lit. f RODO), z prawem do sprzeciwu w każdej chwili za pomocą powyższego przełącznika.",
-
   "privacy.buyTitle": "4. Zakupy",
   "privacy.buyBody": "Jednorazowe odblokowanie sprzedaje i rozlicza Apple App Store, na własnych warunkach i zgodnie z własną polityką prywatności Apple. Nigdy nie widzimy Twojego imienia i nazwiska, danych płatniczych ani konta Apple. Aplikacja otrzymuje tylko potwierdzenie ze sklepu, że odblokowanie zostało kupione, odczytuje z niego, czy był to prawdziwy zakup, czy test, i zapamiętuje odblokowanie w Twoim telefonie.",
-
   "privacy.mapTitle": "5. Mapy",
   "privacy.mapBody": "Mapa ulic składa się z kafelków pobieranych z serwerów OpenStreetMap. Jak każda strona internetowa, serwery te widzą Twój adres IP i żądany fragment mapy, gdy wysyłają kafelek. Sposób postępowania z tymi danymi opisuje <a href=\"https://osmfoundation.org/wiki/Privacy_Policy\" rel=\"noopener\">polityka prywatności OpenStreetMap Foundation</a>.",
-
   "privacy.picTitle": "6. Zdjęcia i historie",
   "privacy.picBody": "Wszystkie zdjęcia i historie są wbudowane w aplikację. Ich oglądanie nie wysyła żadnych zapytań.",
-
   "privacy.handTitle": "7. Wskazówki dojazdu w Mapach Apple lub Mapach Google",
   "privacy.handBody": "Gdy dotkniesz „Wskazówki dojazdu” albo rozpoczniesz spacer w Mapach, aplikacja otwiera Mapy Apple, Mapy Google lub przeglądarkę i przekazuje cel – miejsce albo przystanki spaceru. Od tej chwili trasą zajmuje się ta aplikacja, zgodnie z własną polityką prywatności (<a href=\"https://www.apple.com/pl/legal/privacy/\" rel=\"noopener\">Apple</a>, <a href=\"https://policies.google.com/privacy?hl=pl\" rel=\"noopener\">Google</a>).",
-
   "privacy.connTitle": "8. Inne połączenia",
   "privacy.connBody": "Poza statystykami i mapą aplikacja łączy się z internetem tylko w tych przypadkach:",
   "privacy.conn1": "<strong>Sprawdzenie wersji:</strong> gdy uruchamia się kopia z App Store, pyta publiczną wyszukiwarkę App Store firmy Apple o numer wersji, która jest obecnie w sprzedaży. Zapytanie zawiera tylko numer aplikacji w sklepie, żadnych danych o Tobie; Apple widzi adres IP połączenia. Odpowiedź pomaga rozpoznać kopie uruchamiane przez App Review (punkt 3).",
   "privacy.conn2": "<strong>„Oceń aplikację” i linki:</strong> otwierają stronę aplikacji w App Store lub stronę internetową (np. źródła w sekcji „Autorzy i licencje”) wyłącznie wtedy, gdy ich dotkniesz.",
   "privacy.conn3": "<strong>„Udostępnij aplikację”:</strong> otwiera systemowe okno udostępniania z krótkim tekstem i linkiem do tej strony. To Ty decydujesz, czy i dokąd go wysłać; aplikacja nie widzi odbiorcy.",
-
   "privacy.deviceTitle": "9. Co zostaje w Twoim telefonie",
   "privacy.deviceBody": "Język i motyw, wybrana aplikacja do nawigacji, miejsca oznaczone jako odwiedzone lub ulubione, przełącznik statystyk, informacja, czy podpowiedź „Za darmo: zacznij tutaj” była już wyświetlona, oraz zapis o kupionym odblokowaniu są przechowywane wyłącznie w Twoim telefonie. Aby je usunąć, użyj opcji „Wyczyść” w ustawieniach albo usuń aplikację.",
-
   "privacy.noTitle": "10. Bez kont, bez reklam, bez śledzenia",
   "privacy.noBody": "Nie ma logowania ani reklam. Aplikacja nie pyta o imię ani adres e-mail, nie korzysta z identyfikatora reklamowego i nie śledzi Cię w innych aplikacjach ani na stronach internetowych. Nie sprzedajemy ani nie udostępniamy danych.",
-
   "privacy.webTitle": "11. Ta strona internetowa",
   "privacy.webBody": "Ta strona nie używa plików cookie, analityki ani skryptów zewnętrznych; czcionki są serwowane z tej samej strony. Twój wybór języka i motywu jest zapisywany w pamięci lokalnej przeglądarki i nigdzie nie jest wysyłany. Strona jest hostowana w GitHub Pages; GitHub przetwarza logi serwera, w tym adresy IP, zgodnie z <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">oświadczeniem o prywatności GitHub</a>.",
-
   "privacy.kidsTitle": "12. Wiek użytkowników",
   "privacy.kidsBody": "Aplikacja jest przewodnikiem historycznym dla szerokiego grona odbiorców i nie jest skierowana do dzieci. Nie zbiera danych osobowych od nikogo, w tym od dzieci.",
-
   "privacy.rightsTitle": "13. Twoje prawa",
   "privacy.rightsBody": "W zależności od miejsca zamieszkania (np. na podstawie RODO, brytyjskiego UK GDPR lub tureckiej ustawy KVKK) masz prawo dostępu do danych osobowych, ich sprostowania lub usunięcia, ograniczenia przetwarzania lub wniesienia sprzeciwu, a także prawo do skargi do organu ochrony danych (w Polsce – Prezesa UODO). Ponieważ statystyki są anonimowe, nie możemy powiązać ich z Tobą, ale zawsze możesz je wyłączyć. Z każdą prośbą napisz na <a href=\"mailto:app@save-all.com\">app@save-all.com</a>.",
-
   "privacy.srcTitle": "14. Źródła treści i licencje",
   "privacy.srcBody": "Zdjęcia pochodzą z <a href=\"https://commons.wikimedia.org/\" rel=\"noopener\">Wikimedia Commons</a> i są w domenie publicznej (w tym CC0) lub na licencjach Creative Commons (CC BY i CC BY-SA, w wersjach 3.0 i 4.0). Pod każdym zdjęciem podano autora, źródło i licencję, a pełna lista jest w aplikacji w <strong>Ustawienia › Autorzy i licencje</strong>. Każda historia podaje swoje źródła. Dane mapy © <a href=\"https://www.openstreetmap.org/copyright\" rel=\"noopener\">współtwórcy OpenStreetMap</a>, na licencji Open Database License (ODbL). Czcionki: Playfair Display i Lora, licencja SIL Open Font License 1.1.",
-
   "privacy.changeTitle": "15. Zmiany",
   "privacy.changeBody": "Jeśli zmieni się sposób, w jaki aplikacja postępuje z danymi, ta strona zostanie zaktualizowana przed wydaniem nowej wersji, a data poniżej się zmieni.",
-
   "privacy.contactTitle": "16. Kontakt",
   "privacy.contactBody": "Mehmet Gökhan Memik (thebarnapp), Stambuł, Turcja – <a href=\"mailto:app@save-all.com\">app@save-all.com</a>",
   "privacy.updated": "Obowiązuje od: 11 listopada 2026",
-
-  "support.metaTitle": "Pomoc – Polish Footprints: Istanbul",
-  "support.metaDesc": "Pomoc do aplikacji Polish Footprints: Istanbul: przywracanie zakupu, korzystanie bez internetu, zgoda na lokalizację, wskazówki w Mapach Apple i Mapach Google, język, motyw i kontakt.",
+  "support.metaTitle": "Pomoc – Polskie ślady: Stambuł",
+  "support.metaDesc": "Pomoc do aplikacji Polskie ślady: Stambuł: przywracanie zakupu, korzystanie bez internetu, zgoda na lokalizację, wskazówki w Mapach Apple i Mapach Google, język, motyw i kontakt.",
   "support.h1": "Pomoc",
   "support.lead": "Coś nie działa albo masz pytanie o któreś miejsce? Napisz do nas – czytamy i odpowiadamy na każdą wiadomość, po polsku, angielsku lub turecku.",
   "support.mailTitle": "E-mail",

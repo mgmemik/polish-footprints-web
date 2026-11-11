@@ -1,6 +1,5 @@
 {
   "_comment": "Türkçe metinler. Anahtarlar en.json ile aynı olmalı; değişiklikten sonra: python3 tools/build.py (anahtarları denetler)",
-
   "common.skip": "İçeriğe geç",
   "common.navLabel": "Ana menü",
   "common.footerNavLabel": "Alt menü",
@@ -10,7 +9,7 @@
   "common.langLabel": "Dil",
   "common.themeToggle": "Koyu ve açık tema arasında geçiş yap",
   "common.brandSub": "İstanbul",
-  "common.footerAbout": "Polish Footprints: Istanbul, İstanbul'daki Polonya izlerini kendi başınıza gezebileceğiniz bir tarih haritasıdır; iPhone ve iPad için, Lehçe, İngilizce ve Türkçe.",
+  "common.footerAbout": "Polonya İzleri: İstanbul, İstanbul'daki Polonya izlerini kendi başınıza gezebileceğiniz bir tarih haritasıdır; iPhone ve iPad için, Lehçe, İngilizce ve Türkçe.",
   "common.footerPublisher": "Yayıncı: thebarnapp (Mehmet Gökhan Memik), İstanbul, Türkiye.",
   "common.footerContact": "İletişim: <a href=\"mailto:app@save-all.com\">app@save-all.com</a>",
   "common.footerSeries": "Footprints tarih rehberleri serisinin bir parçasıdır – ayrıca bakınız: <a href=\"https://mgmemik.github.io/british-footprints-web/?lang=tr\">British Footprints: Istanbul</a>.",
@@ -18,10 +17,9 @@
   "common.storeApple": "App Store",
   "common.storeAppleSmall": "İndirin:",
   "common.storeSoon": "Yakında App Store'da.",
-
-  "home.metaTitle": "Polish Footprints: Istanbul – İstanbul'da Polonya izleri: tarih yürüyüşleri ve harita",
+  "home.metaTitle": "Polonya İzleri: İstanbul – tarih yürüyüşleri ve harita",
   "home.metaDesc": "İstanbul'daki Polonya tarihini izleyen 38 yer ve 8 yürüyüş rotası: Polonezköy (Adampol), Adam Mickiewicz Müzesi, padişah huzurundaki Lehistan elçileri, Hürrem Sultan, 1939'un Polonya altınları ve Papa II. Jean Paul. Lehçe, İngilizce ve Türkçe; iPhone ve iPad için.",
-  "home.ogTitle": "Polish Footprints: Istanbul – İstanbul'da Polonya izleri",
+  "home.ogTitle": "Polonya İzleri: İstanbul – Polonya tarihinin izinde İstanbul",
   "home.ogDesc": "Polonyalı İstanbul'un tarih haritası: Polonezköy'den (Adampol) Mickiewicz Müzesi'ne 38 yer ve 8 yürüyüş; Lehçe, İngilizce ve Türkçe.",
   "home.ogAlt": "Polish Footprints uygulama simgesi – beyaz-kırmızı bir kuşakla kesilen mavi bir çini üzerinde laleli pusula gülü – ve Polish Footprints, Istanbul yazısı",
   "home.eyebrow": "iPhone ve iPad · Lehçe, İngilizce ve Türkçe",
@@ -31,7 +29,6 @@
   "home.stat2": "<strong>8</strong> yürüyüş",
   "home.stat3": "<strong>86</strong> görsel",
   "home.stat4": "<strong>3</strong> dil",
-
   "home.themesTitle": "Polonya tarihinden dokuz bölüm",
   "home.themesLead": "İstanbul'un bir de Polonya hikâyesi var ve çoğumuz her gün önünden geçip gidiyoruz. Altı yüzyılı aşkın Türk-Polonya tarihi, yer yer anlatılıyor. Haritadaki her yer bu temalardan birine aittir.",
   "home.t1Title": "Polonezköy (Adampol)",
@@ -52,7 +49,6 @@
   "home.t8Body": "Eylül 1939'da Polonya Bankası'nın altın rezervleri İstanbul'dan geçti: Kabataş açığında demirleyen bir İngiliz gemisinden Haydarpaşa'da Beyrut'a giden bir trene.",
   "home.t9Title": "Günümüzde Polonya izleri",
   "home.t9Body": "Polonezköy'ün sakinleri, Sent Antuan'daki Lehçe ayin ve Maslak'taki Polonya Başkonsolosluğu – Boğaz'daki Polonya diplomasisinin bugünkü adresi.",
-
   "home.insideTitle": "Neler var",
   "home.insideLead": "Her yer haritada, temasına göre gruplanmış olarak durur. Dokunun: hikâyesi, görselleri, ilgili kişiler ve kısa bir ziyaret notu açılır.",
   "home.f1Title": "Hikâyeleriyle 38 yer",
@@ -67,7 +63,6 @@
   "home.f5Body": "Bir yere yürümek için Yol tarifi'ne dokunun ya da bütün bir yürüyüşü tek düğmeyle harita uygulamanıza gönderin.",
   "home.f6Title": "Konumunuz telefonunuzda kalır",
   "home.f6Body": "Mesafeler ve “buradasınız” noktası telefonda hesaplanır. Hesap yok, reklam yok, takip yok.",
-
   "home.walksTitle": "Sekiz yürüyüş",
   "home.walksLead": "Her yürüyüş tek bir hikâyeye ait yerleri birbirine bağlar. Süreler yol ve gezinti için yaklaşıktır; müze ziyaretleri dahil değildir.",
   "home.freeTag": "Ücretsiz",
@@ -88,7 +83,6 @@
   "home.w8Name": "II. Jean Paul İstanbul'da, 1979",
   "home.w8Meta": "4 durak · yaklaşık 3 sa 30 dk · Harbiye, İstiklal, Fener ve Kumkapı, toplu taşımayla",
   "home.walksNote": "Ziyaret saatleri değişir – uygulama her yer için gitmeden önce neyi kontrol etmeniz gerektiğini söyler.",
-
   "home.freeTitle": "Ücretsiz başlayın, bir kez açın",
   "home.freeLead": "Uygulamayı ücretsiz indirin, karar vermeden önce keşfedin.",
   "home.freeCardTitle": "Ücretsiz",
@@ -102,10 +96,8 @@
   "home.unlock4": "Her yere yol tarifi",
   "home.unlock5": "Gelecekteki içerik güncellemeleri dahil",
   "home.unlockNote": "Tek satın alma – abonelik yok, reklam yok, hesap yok. Fiyatı App Store kendi para biriminizde gösterir.",
-
   "home.screensTitle": "Uygulamadan görüntüler",
   "home.screensLead": "Uygulamanın koyu ve açık temasından gerçek ekranlar.",
-
   "home.faqTitle": "Sorular ve cevaplar",
   "home.faq1q": "Bu, İstanbul'daki Polonya izlerini kendi başınıza gezebileceğiniz bir yürüyüş rehberi mi?",
   "home.faq1a": "Evet. Sekiz yürüyüş, her durağında bir hikâye olan numaralı rotalardır. Kendi hızınızda yürürsünüz; uygulama durakları yol tarifi için Apple Haritalar'a veya Google Haritalar'a aktarır.",
@@ -125,34 +117,29 @@
   "home.faq8a": "Hayır. Hesap yok, reklam yok, takip yok. Uygulama, Ayarlar'dan kapatabileceğiniz anonim kullanım istatistikleri gönderir; <a href=\"privacy/\">gizlilik politikası</a> bunların tam olarak neleri içerdiğini listeler.",
   "home.faq9q": "Polonezköy'e (Adampol) nasıl gidilir?",
   "home.faq9a": "Köy, Anadolu yakasında, Beykoz ormanlarının içinde, Sultanahmet'e kuş uçuşu 25 km kadar uzaklıktadır. Raylı sistem ulaşmaz: en kolayı Kavacık'tan veya Beykoz'dan taksiyle gitmektir (yaklaşık 15-20 dakika). Belediye otobüsleri de uğrar; yola çıkmadan güncel hatları kontrol edin. Köy iki saatte yürüyerek gezilebilir; hafta içi hafta sonundan çok daha sakindir.",
-
   "home.ctaTitle": "Polonya izlerini yanınızda taşıyın",
   "home.ctaLead": "38 yer, 8 yürüyüş, tek harita – denemesi ücretsiz.",
-
-  "privacy.metaTitle": "Gizlilik politikası – Polish Footprints: Istanbul",
-  "privacy.metaDesc": "Polish Footprints: Istanbul uygulaması konum, anonim kullanım istatistikleri, satın almalar ve haritalarla nasıl çalışır? Hesap yok, reklam yok, takip yok.",
+  "privacy.metaTitle": "Gizlilik politikası – Polonya İzleri: İstanbul",
+  "privacy.metaDesc": "Polonya İzleri: İstanbul uygulaması konum, anonim kullanım istatistikleri, satın almalar ve haritalarla nasıl çalışır? Hesap yok, reklam yok, takip yok.",
   "privacy.h1": "Gizlilik politikası",
-  "privacy.lead": "Polish Footprints: Istanbul, mümkün olan en az veriyle çalışacak şekilde tasarlandı. Hesap yok, reklam yok, takip yok. Bu sayfa, uygulamanın ve bu web sitesinin verilerle yaptığı her şeyi sade bir dille açıklar.",
+  "privacy.lead": "Polonya İzleri: İstanbul, mümkün olan en az veriyle çalışacak şekilde tasarlandı. Hesap yok, reklam yok, takip yok. Bu sayfa, uygulamanın ve bu web sitesinin verilerle yaptığı her şeyi sade bir dille açıklar.",
   "privacy.summaryTitle": "Kısaca",
   "privacy.sum1": "Konumunuz yalnızca telefonunuzda ve yalnızca uygulamayı kullanırken kullanılır. Koordinatlarınız asla saklanmaz ve gönderilmez; istatistikler yalnızca telefonun İstanbul'da olup olmadığını söyler (yaklaşık konum).",
   "privacy.sum2": "Anonim kullanım istatistikleri TelemetryDeck'e (Almanya) gider. Ad yok, e-posta yok, arama metni yok, koordinat yok. İsterseniz kapatabilirsiniz.",
   "privacy.sum3": "Satın almaları Apple yürütür. Ödeme bilgilerinizi hiçbir zaman görmeyiz.",
   "privacy.sum4": "Hesap yok, reklam yok, çerez yok, uygulamalar veya web siteleri arasında takip yok.",
   "privacy.factApp": "Uygulama",
-  "privacy.factAppV": "Polish Footprints: Istanbul (iPhone ve iPad)",
+  "privacy.factAppV": "Polonya İzleri: İstanbul (Polish Footprints: Istanbul) (iPhone ve iPad)",
   "privacy.factWho": "Sorumlu",
   "privacy.factWhoV": "Mehmet Gökhan Memik, thebarnapp adıyla (şahıs işletmesi), İstanbul, Türkiye",
   "privacy.factContact": "İletişim",
   "privacy.factDate": "Yürürlük",
   "privacy.factDateV": "11 Kasım 2026",
-
   "privacy.whoTitle": "1. Sorumlu kim",
   "privacy.whoBody": "Uygulamayı, Mehmet Gökhan Memik'in İstanbul'daki şahıs işletmesi thebarnapp yayınlar. Burada anlatılan veri işlemeden o sorumludur. Her türlü soru veya talep için <a href=\"mailto:app@save-all.com\">app@save-all.com</a> adresine yazın.",
-
   "privacy.locTitle": "2. Konumunuz",
   "privacy.locBody": "Uygulama açılışta asla konum istemez. Yalnızca mesafeleri görmek için dokunduğunuzda ve yalnızca <strong>uygulamayı kullanırken</strong> erişim ister – arka planda asla. İzin verirseniz konumunuz <strong>yalnızca telefonunuzda</strong> kullanılır: haritada “buradasınız” noktasını göstermek ve her yere olan mesafeyi ölçmek için. Koordinatlarınız hiçbir zaman saklanmaz; ne bize ne de başka birine gönderilir.",
   "privacy.locBody2": "Konumunuzdan türetilip telefondan çıkan tek şey, kullanım istatistiklerindeki (bölüm 3) evet/hayır/bilinmiyor değeridir: telefonun İstanbul merkezine yaklaşık 30 km içinde olup olmadığı. App Store gizlilik bilgilerinde bu, yalnızca analiz için kullanılan, size bağlanmayan ve takip için kullanılmayan <strong>yaklaşık konum</strong> olarak listelenir. Uygulama konum izni olmadan da tam olarak çalışır; izni istediğiniz zaman telefonunuzun ayarlarından verebilir veya geri alabilirsiniz.",
-
   "privacy.anaTitle": "3. Anonim kullanım istatistikleri (TelemetryDeck)",
   "privacy.anaBody": "Hangi yerlerin ve özelliklerin kullanıldığını öğrenmek için uygulama, Almanya (AB) merkezli ve gizliliği öne alan bir analiz hizmeti olan <strong>TelemetryDeck GmbH</strong>'ya anonim kullanım istatistikleri gönderir. İstatistikler “bir yer sayfası açıldı” ya da “bir yürüyüş haritada başlatıldı” gibi kısa sinyallerdir. Ad, e-posta adresi, arama metni ve konum koordinatı içermezler. Her değer uygulamadaki sabit bir listeden gelir; bunun dışındaki her şey “diğer” olarak gönderilir.",
   "privacy.anaWhatTitle": "Bir sinyal neler içerebilir",
@@ -181,52 +168,38 @@
   "privacy.anaOptTitle": "Kapatmak",
   "privacy.anaOpt": "Uygulamanın <strong>Ayarlar</strong> bölümünü açın ve <strong>“Anonim kullanım istatistiklerini paylaş”</strong> anahtarını kapatın. Uygulama, istatistiklerin kapatıldığını bildiren son bir sinyal gönderir, analiz yazılımını durdurur ve başka hiçbir şey göndermez. Seçiminiz telefonda saklanır; kapalı kaldığı sürece analiz yazılımı hiç başlatılmaz.",
   "privacy.anaBasis": "Hukuki dayanak: rehberi geliştirebilmek için nasıl kullanıldığını anonim biçimde anlamaya yönelik meşru menfaatimiz (GDPR md. 6/1-f); yukarıdaki anahtarla her zaman itiraz hakkınız vardır.",
-
   "privacy.buyTitle": "4. Satın almalar",
   "privacy.buyBody": "Tek seferlik kilit açma, Apple'ın kendi koşulları ve gizlilik politikası çerçevesinde Apple App Store üzerinden satılır ve ödenir. Adınızı, ödeme bilgilerinizi veya Apple Hesabınızı hiçbir zaman görmeyiz. Uygulama yalnızca mağazadan kilit açmanın satın alındığına dair onayı alır, bunun gerçek bir satın alma mı yoksa test mi olduğunu bu onaydan okur ve kilit açmayı telefonunuzda hatırlar.",
-
   "privacy.mapTitle": "5. Haritalar",
   "privacy.mapBody": "Sokak haritası, OpenStreetMap sunucularından yüklenen harita karolarından oluşur. Her web sitesinde olduğu gibi bu sunucular, bir karoyu gönderirken IP adresinizi ve istenen harita bölgesini görür. Bu verilerin nasıl işlendiği <a href=\"https://osmfoundation.org/wiki/Privacy_Policy\" rel=\"noopener\">OpenStreetMap Vakfı gizlilik politikasında</a> anlatılır.",
-
   "privacy.picTitle": "6. Görseller ve hikâyeler",
   "privacy.picBody": "Tüm görseller ve hikâyeler uygulamanın içindedir. Onlara bakmak hiçbir yere istek göndermez.",
-
   "privacy.handTitle": "7. Apple Haritalar veya Google Haritalar'da yol tarifi",
   "privacy.handBody": "Yol tarifi'ne dokunduğunuzda ya da bir yürüyüşü haritada başlattığınızda uygulama Apple Haritalar'ı, Google Haritalar'ı veya bir web tarayıcısını açar ve ona varış noktasını – yeri ya da yürüyüşün duraklarını – iletir. Bundan sonra rotayla o uygulama kendi gizlilik politikasına göre ilgilenir (<a href=\"https://www.apple.com/tr/legal/privacy/\" rel=\"noopener\">Apple</a>, <a href=\"https://policies.google.com/privacy?hl=tr\" rel=\"noopener\">Google</a>).",
-
   "privacy.connTitle": "8. Diğer bağlantılar",
   "privacy.connBody": "İstatistikler ve harita dışında uygulama internete yalnızca şu durumlarda bağlanır:",
   "privacy.conn1": "<strong>Sürüm kontrolü:</strong> App Store'dan yüklenmiş bir kopya açıldığında, Apple'ın herkese açık App Store sorgusundan şu anda satışta olan sürüm numarasını ister. İstek yalnızca uygulamanın mağaza numarasını içerir, sizinle ilgili hiçbir veri içermez; Apple bağlantının IP adresini görür. Cevap, App Review'un çalıştırdığı kopyaları tanımaya yardım eder (bölüm 3).",
   "privacy.conn2": "<strong>“Uygulamayı değerlendir” ve bağlantılar:</strong> App Store sayfasını veya bir web sitesini (örneğin Kaynaklar ve lisanslar'daki kaynakları) yalnızca siz dokunduğunuzda açar.",
   "privacy.conn3": "<strong>“Uygulamayı paylaş”:</strong> kısa bir metin ve bu web sitesinin bağlantısıyla iPhone'un paylaşım penceresini açar. Gönderip göndermeyeceğinize ve nereye göndereceğinize siz karar verirsiniz; uygulama alıcıyı görmez.",
-
   "privacy.deviceTitle": "9. Telefonunuzda kalanlar",
   "privacy.deviceBody": "Diliniz ve temanız, seçtiğiniz harita uygulaması, gidildi ya da favori olarak işaretlediğiniz yerler, istatistik anahtarı, “Ücretsiz: buradan başlayın” ipucunu görüp görmediğiniz ve kilit açmayı satın aldığınıza dair kayıt yalnızca telefonunuzda saklanır. Silmek için ayarlardaki “Sil” düğmesini kullanın ya da uygulamayı kaldırın.",
-
   "privacy.noTitle": "10. Hesap yok, reklam yok, takip yok",
   "privacy.noBody": "Oturum açma ve reklam yoktur. Uygulama adınızı veya e-postanızı sormaz, reklam kimliğini kullanmaz ve sizi başka uygulamalarda veya web sitelerinde takip etmez. Veri satmayız ve paylaşmayız.",
-
   "privacy.webTitle": "11. Bu web sitesi",
   "privacy.webBody": "Bu site çerez, analiz ve üçüncü taraf betik kullanmaz; yazı tipleri sitenin kendisinden yüklenir. Dil ve tema seçiminiz tarayıcınızın yerel deposunda saklanır ve hiçbir yere gönderilmez. Site GitHub Pages üzerinde barındırılır; GitHub, IP adresleri dahil sunucu kayıtlarını <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">GitHub gizlilik bildiriminde</a> anlatıldığı şekilde işler.",
-
   "privacy.kidsTitle": "12. Kullanıcıların yaşı",
   "privacy.kidsBody": "Uygulama genel kitleye yönelik bir tarih rehberidir ve çocuklara yönelik değildir. Çocuklar dahil hiç kimseden kişisel veri toplamaz.",
-
   "privacy.rightsTitle": "13. Haklarınız",
   "privacy.rightsBody": "Yaşadığınız yere göre (örneğin GDPR, Birleşik Krallık GDPR'ı veya Türkiye'de KVKK kapsamında) kişisel verilerinize erişme, bunları düzeltme veya sildirme, işlemeyi kısıtlama veya itiraz etme ve bir veri koruma otoritesine şikâyette bulunma hakkınız vardır. İstatistikler anonim olduğu için bunları sizinle ilişkilendiremeyiz, ancak her zaman kapatabilirsiniz. Her türlü talep için <a href=\"mailto:app@save-all.com\">app@save-all.com</a> adresine yazın.",
-
   "privacy.srcTitle": "14. İçerik kaynakları ve lisanslar",
   "privacy.srcBody": "Görseller <a href=\"https://commons.wikimedia.org/\" rel=\"noopener\">Wikimedia Commons</a>'tan gelir; kamu malıdır (CC0 dahil) veya Creative Commons lisanslıdır (CC BY ve CC BY-SA, 3.0 ve 4.0 sürümleri). Her görselin altında yazarı, kaynağı ve lisansı yazar; tam liste uygulamada <strong>Ayarlar › Kaynaklar ve lisanslar</strong> bölümündedir. Her hikâye kendi kaynaklarını listeler. Harita verisi © <a href=\"https://www.openstreetmap.org/copyright\" rel=\"noopener\">OpenStreetMap katkıcıları</a>, Open Database License (ODbL) kapsamında. Yazı tipleri: Playfair Display ve Lora, SIL Open Font License 1.1.",
-
   "privacy.changeTitle": "15. Değişiklikler",
   "privacy.changeBody": "Uygulamanın verilerle çalışma şekli değişirse bu sayfa yeni sürüm yayımlanmadan önce güncellenir ve aşağıdaki yürürlük tarihi değişir.",
-
   "privacy.contactTitle": "16. İletişim",
   "privacy.contactBody": "Mehmet Gökhan Memik (thebarnapp), İstanbul, Türkiye – <a href=\"mailto:app@save-all.com\">app@save-all.com</a>",
   "privacy.updated": "Yürürlük tarihi: 11 Kasım 2026",
-
-  "support.metaTitle": "Destek – Polish Footprints: Istanbul",
-  "support.metaDesc": "Polish Footprints: Istanbul için yardım: kilit açmayı geri yükleme, internetsiz kullanım, konum izni, Apple Haritalar ve Google Haritalar'da yol tarifi, dil, tema ve iletişim.",
+  "support.metaTitle": "Destek – Polonya İzleri: İstanbul",
+  "support.metaDesc": "Polonya İzleri: İstanbul için yardım: kilit açmayı geri yükleme, internetsiz kullanım, konum izni, Apple Haritalar ve Google Haritalar'da yol tarifi, dil, tema ve iletişim.",
   "support.h1": "Destek",
   "support.lead": "Bir şey çalışmıyor mu, ya da bir yer hakkında sorunuz mu var? Bize yazın – her mesaj okunur ve Lehçe, İngilizce veya Türkçe cevaplanır.",
   "support.mailTitle": "E-posta",
