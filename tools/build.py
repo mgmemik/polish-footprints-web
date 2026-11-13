@@ -147,7 +147,7 @@ def main():
         other = texts[lang]
         problems += [f"only in en.json: {k} (missing in {lang}.json)" for k in sorted(set(en) - set(other))]
         problems += [f"only in {lang}.json: {k}" for k in sorted(set(other) - set(en))]
-        problems += [f"{lang}.json: empty value for {k}" for k, v in other.items() if not str(v).strip()]
+        problems += [f"{lang}.json: empty value for {k}" for k, v in other.items() if not str(v).strip() and str(en.get(k, "")).strip()]
     used = set()
     stale = []
     title_keys = set()
