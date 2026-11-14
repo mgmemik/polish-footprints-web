@@ -96,14 +96,14 @@
           <ul class="checks">
             <li data-i18n="privacy.sum1">Your location is used only on your phone, and only while you use the app. Your coordinates are never stored or sent; the statistics only say whether the phone is in Istanbul (approximate location).</li>
             <li data-i18n="privacy.sum2">Anonymous usage statistics go to TelemetryDeck (Germany). No name, no e-mail, no search text, no coordinates. You can switch them off.</li>
-            <li data-i18n="privacy.sum3">Purchases are handled by Apple. We never see your payment details.</li>
+            <li data-i18n="privacy.sum3">Purchases are handled by Apple or Google. We never see your payment details.</li>
             <li data-i18n="privacy.sum4">No account, no ads, no cookies, no tracking across apps or websites.</li>
           </ul>
           <dl class="facts">
-            <div><dt data-i18n="privacy.factApp">App</dt><dd data-i18n="privacy.factAppV">Polish Footprints: Istanbul (iPhone and iPad)</dd></div>
+            <div><dt data-i18n="privacy.factApp">App</dt><dd data-i18n="privacy.factAppV">Polish Footprints: Istanbul (iPhone, iPad and Android)</dd></div>
             <div><dt data-i18n="privacy.factWho">Responsible</dt><dd data-i18n="privacy.factWhoV">Mehmet Gökhan Memik, trading as thebarnapp (sole proprietorship), Istanbul, Türkiye</dd></div>
             <div><dt data-i18n="privacy.factContact">Contact</dt><dd><a href="mailto:app@save-all.com">app@save-all.com</a></dd></div>
-            <div><dt data-i18n="privacy.factDate">Effective</dt><dd data-i18n="privacy.factDateV">11 November 2026</dd></div>
+            <div><dt data-i18n="privacy.factDate">Effective</dt><dd data-i18n="privacy.factDateV">14 November 2026</dd></div>
           </dl>
         </aside>
         <article class="policy">
@@ -114,7 +114,7 @@
           <section class="policy-section" id="location">
             <h2 data-i18n="privacy.locTitle">2. Your location</h2>
             <p data-i18n="privacy.locBody">The app never asks for your location when it starts. It asks only when you tap to see distances, and only for access <strong>while you use the app</strong> – never in the background. If you allow it, your position is used <strong>only on your phone</strong>: to show the “you are here” dot on the map and to measure the distance to each place. Your coordinates are never stored and never sent to us or to anyone else.</p>
-            <p data-i18n="privacy.locBody2">The only thing derived from your location that leaves the phone is a yes/no/unknown value in the usage statistics (section 3): whether the phone is within about 30 km of central Istanbul. In the App Store privacy details this is listed as <strong>approximate location</strong>, used for analytics only, not linked to you and not used for tracking. The app works fully without location access; you can allow or withdraw it at any time in your phone's settings.</p>
+            <p data-i18n="privacy.locBody2">The only thing derived from your location that leaves the phone is a yes/no/unknown value in the usage statistics (section 3): whether the phone is within about 30 km of central Istanbul. In the App Store and Google Play privacy details this is listed as <strong>approximate location</strong>, used for analytics only, not linked to you and not used for tracking. The app works fully without location access; you can allow or withdraw it at any time in your phone's settings.</p>
           </section>
           <section class="policy-section" id="analytics">
             <h2 data-i18n="privacy.anaTitle">3. Anonymous usage statistics (TelemetryDeck)</h2>
@@ -122,10 +122,10 @@
             <h3 data-i18n="privacy.anaWhatTitle">What a signal can contain</h3>
             <ul class="bullets">
               <li data-i18n="privacy.anaWhat1"><strong>Screens and features:</strong> app start (first start or not), which screen or tab is shown (map, explore, walks, settings, place, walk, preview, unlock screen, credits, privacy).</li>
-              <li data-i18n="privacy.anaWhat2"><strong>Places and walks:</strong> which place or walk was opened, previewed, marked as visited or favourite, or handed to a maps app – identified by the app's own content id (for example “mickiewicz-museum”), its theme, and whether it is free or locked; for directions, which maps app was used (Apple Maps, Google Maps or the browser) and whether you went ahead or cancelled.</li>
+              <li data-i18n="privacy.anaWhat2"><strong>Places and walks:</strong> which place or walk was opened, previewed, marked as visited or favourite, or handed to a maps app – identified by the app's own content id (for example “mickiewicz-museum”), its theme, and whether it is free or locked; for directions, which maps app was used (Apple Maps, Google Maps, another maps app or the browser) and whether you went ahead or cancelled.</li>
               <li data-i18n="privacy.anaWhat3"><strong>Map and search:</strong> theme filters and the favourites filter on the map or list, the “Free: start here” hint (shown, tapped, retired), and for searches only the number of results and the length of the query in buckets (such as 3–5 letters) – <strong>never the search text</strong>.</li>
               <li data-i18n="privacy.anaWhat4"><strong>Location permission:</strong> that the map's “see distances” card was shown, and when you tap to allow location, where you tapped and how the system question ended (allowed, not allowed, location services off). Once per session, if location cannot be used, the general reason.</li>
-              <li data-i18n="privacy.anaWhat5"><strong>Unlock and purchases:</strong> the unlock screen shown or closed and what opened it, a purchase started, completed, cancelled, pending or failed (with a general reason), restore requested and its result, a redeem code sheet opened, and whether a completed purchase was a real one or a test (as the App Store's own transaction record says). For a real purchase, the unlock's fixed list price in US dollars is counted so we can see sales; never your local price, store country or payment data.</li>
+              <li data-i18n="privacy.anaWhat5"><strong>Unlock and purchases:</strong> the unlock screen shown or closed and what opened it, a purchase started, completed, cancelled, pending or failed (with a general reason), restore requested and its result, a redeem code sheet opened (iPhone and iPad), and whether a completed purchase was a real one or a test (as the store's own purchase record says: the App Store transaction, or on Google Play whether it was a licence test or a promo code). For a real purchase, the unlock's fixed list price in US dollars is counted so we can see sales; never your local price, store country or payment data.</li>
               <li data-i18n="privacy.anaWhat6"><strong>Settings:</strong> theme, language and maps app changed, marks cleared, “Rate the app” opened, “Share the app” used (and whether the share sheet was completed or closed – not where it was sent), and the statistics switch itself (switching off sends one last signal, then nothing more).</li>
               <li data-i18n="privacy.anaWhat7"><strong>Nothing else:</strong> no contacts, photos, files, health data, browsing history or advertising identifiers are ever read.</li>
             </ul>
@@ -133,27 +133,27 @@
             <div class="table-wrap"><table>
               <thead><tr><th scope="col" data-i18n="privacy.ctxKey">Value</th><th scope="col" data-i18n="privacy.ctxMeaning">Meaning</th></tr></thead>
               <tbody>
-                <tr><td><code>channel</code></td><td data-i18n="privacy.ctxChannel">How this copy of the app was installed: development build, TestFlight, App Store, App Review (a store copy run by Apple's reviewers) or unknown.</td></tr>
+                <tr><td><code>channel</code></td><td data-i18n="privacy.ctxChannel">How this copy of the app was installed: development build, TestFlight, App Store, App Review (a store copy run by Apple's reviewers), Google Play, an internal or closed Android test, a Google Play test device (see below) or unknown.</td></tr>
                 <tr><td><code>entitled</code></td><td data-i18n="privacy.ctxEntitled">Whether the one-time unlock has been bought (yes/no).</td></tr>
                 <tr><td><code>uiLanguage</code></td><td data-i18n="privacy.ctxLang">The app's language: Polish, English, Turkish or other.</td></tr>
                 <tr><td><code>theme</code></td><td data-i18n="privacy.ctxTheme">The app's theme: dark, light or phone setting.</td></tr>
                 <tr><td><code>inIstanbul</code></td><td data-i18n="privacy.ctxIst">Whether the phone is within about 30 km of central Istanbul: yes, no or unknown. Worked out on the phone; the coordinates never leave it.</td></tr>
-                <tr><td><code>storeCheck</code></td><td data-i18n="privacy.ctxCheck">For copies from the App Store: whether the copy is in fact being run by Apple's App Review, and which sign showed it – so that review sessions are not counted as real users.</td></tr>
-                <tr><td><code>storeDiag</code></td><td data-i18n="privacy.ctxDiag">A short technical code from the same check (for example whether the App Store's record of this copy could be read and whether the running version is newer than the one on the App Store). No dates, no device names, no store account.</td></tr>
+                <tr><td><code>storeCheck</code></td><td data-i18n="privacy.ctxCheck">For store copies: whether the copy is in fact being run by Apple's App Review or by Google Play's automatic test devices (the pre-launch report), and which sign showed it – so that review and test sessions are not counted as real users. On Android the signs are the system's own test-harness flags, Firebase Test Lab and a short list of known test-device models.</td></tr>
+                <tr><td><code>storeDiag</code></td><td data-i18n="privacy.ctxDiag">A short technical code from the same check (on iPhone and iPad, for example whether the App Store's record of this copy could be read and whether the running version is newer than the one on the App Store; on Android not used). No dates, no device names, no store account.</td></tr>
               </tbody>
             </table></div>
-            <p data-i18n="privacy.anaSdk">The TelemetryDeck software adds technical details such as the app version and build number, the iOS version, the device model and screen size, the phone's language, region and time zone, display and accessibility settings (for example dark mode or larger text), the day and hour of use and simple counters such as the number of sessions. It also sends a signal when a session starts and when a new installation is detected.</p>
+            <p data-i18n="privacy.anaSdk">The TelemetryDeck software adds technical details such as the app version and build number, the operating system (iOS or Android) and its version, the device model and screen size, the phone's language, region and time zone, display and accessibility settings (for example dark mode or larger text), the day and hour of use and simple counters such as the number of sessions. It also sends a signal when a session starts and when a new installation is detected.</p>
             <h3 data-i18n="privacy.anaIdTitle">Anonymous identifier</h3>
-            <p data-i18n="privacy.anaId">To count users rather than app starts, the analytics software uses the random identifier that iOS gives the apps of one developer on your device (not the advertising identifier). It turns it into a one-way hash on the phone before anything is sent, so TelemetryDeck receives a value that cannot be traced back to you, your device or your Apple Account. It is not linked to any other data about you and is not used for advertising or tracking across apps or websites. TelemetryDeck receives the data over an encrypted connection; like any internet server it sees the connection's IP address, and it states that it does not store it.</p>
+            <p data-i18n="privacy.anaId">To count users rather than app starts, the analytics software uses a random identifier. On iPhone and iPad this is the identifier that iOS gives the apps of one developer on your device; on Android it is a random number the analytics software creates on first start and keeps in the app's own storage (deleting the app removes it). Neither is the advertising identifier, and on Android the device's own identifiers are not read. Before anything is sent, the identifier is turned into a one-way hash on the phone, so TelemetryDeck receives a value that cannot be traced back to you, your device or your store account. It is not linked to any other data about you and is not used for advertising or tracking across apps or websites. TelemetryDeck receives the data over an encrypted connection; like any internet server it sees the connection's IP address, and it states that it does not store it.</p>
             <h3 data-i18n="privacy.anaTestTitle">Test data and live data</h3>
-            <p data-i18n="privacy.anaTest">Development builds, TestFlight builds and App Store copies run by Apple's App Review send their statistics marked as test data, kept apart from the statistics of the published app.</p>
+            <p data-i18n="privacy.anaTest">Development builds, TestFlight builds, internal and closed Android test builds, App Store copies run by Apple's App Review and Google Play copies run on Google's automatic test devices send their statistics marked as test data, kept apart from the statistics of the published app.</p>
             <h3 data-i18n="privacy.anaOptTitle">Switching it off</h3>
             <p data-i18n="privacy.anaOpt">Open the app's <strong>Settings</strong> and switch off <strong>“Share anonymous usage statistics”</strong>. The app then sends one last signal saying that statistics were switched off, stops the analytics software and sends nothing more. The choice is saved on the phone; while it is off, the analytics software is not started at all.</p>
             <p class="small" data-i18n="privacy.anaBasis">Legal basis: our legitimate interest in understanding, in anonymous form, how the guide is used so that we can improve it (Art. 6(1)(f) GDPR), with the right to object at any time through the switch above.</p>
           </section>
           <section class="policy-section" id="purchases">
             <h2 data-i18n="privacy.buyTitle">4. Purchases</h2>
-            <p data-i18n="privacy.buyBody">The one-time unlock is sold and paid through the Apple App Store, under Apple's own terms and privacy policy. We never see your name, payment details or Apple Account. The app only receives the store's confirmation that the unlock was bought, reads from it whether it was a real purchase or a test, and remembers the unlock on your phone.</p>
+            <p data-i18n="privacy.buyBody">The one-time unlock is sold and paid through the Apple App Store or Google Play, under Apple's or Google's own terms and privacy policies. We never see your name, payment details or store account. The app only receives the store's confirmation that the unlock was bought, reads from it whether it was a real purchase or a test, and remembers the unlock on your phone.</p>
           </section>
           <section class="policy-section" id="maps">
             <h2 data-i18n="privacy.mapTitle">5. Maps</h2>
@@ -171,9 +171,9 @@
             <h2 data-i18n="privacy.connTitle">8. Other connections</h2>
             <p data-i18n="privacy.connBody">Apart from the statistics and the map, the app connects to the internet only in these cases:</p>
             <ul class="bullets">
-              <li data-i18n="privacy.conn1"><strong>App version check:</strong> when a copy from the App Store starts, it asks Apple's public App Store lookup for the version number currently on sale. The request contains only the app's store number, no data about you; Apple sees the connection's IP address. The answer helps to recognise copies run by App Review (section 3).</li>
-              <li data-i18n="privacy.conn2"><strong>“Rate the app” and links:</strong> these open the App Store page or a website (for example the sources in Credits &amp; licences) only when you tap them.</li>
-              <li data-i18n="privacy.conn3"><strong>“Share the app”:</strong> opens the iPhone share sheet with a short text and a link to this website. You choose whether and where to send it; the app does not see the recipient.</li>
+              <li data-i18n="privacy.conn1"><strong>App version check (iPhone and iPad):</strong> when a copy from the App Store starts, it asks Apple's public App Store lookup for the version number currently on sale. The request contains only the app's store number, no data about you; Apple sees the connection's IP address. The answer helps to recognise copies run by App Review (section 3). The Android version makes no such request.</li>
+              <li data-i18n="privacy.conn2"><strong>“Rate the app” and links:</strong> these open the app's page in the App Store or on Google Play, or a website (for example the sources in Credits &amp; licences), only when you tap them.</li>
+              <li data-i18n="privacy.conn3"><strong>“Share the app”:</strong> opens your phone's share sheet with a short text and a link to this website. You choose whether and where to send it; the app does not see the recipient.</li>
             </ul>
           </section>
           <section class="policy-section">
@@ -198,7 +198,7 @@
           </section>
           <section class="policy-section" id="sources">
             <h2 data-i18n="privacy.srcTitle">14. Content sources and licences</h2>
-            <p data-i18n="privacy.srcBody">The pictures come from <a href="https://commons.wikimedia.org/" rel="noopener">Wikimedia Commons</a> and are in the public domain (including CC0) or under Creative Commons licences (CC BY and CC BY-SA, versions 3.0 and 4.0). Every picture shows its author, source and licence under the image, and the full list is in the app under <strong>Settings › Credits &amp; licences</strong>. Every story lists its sources. Map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>, available under the Open Database License (ODbL). Fonts: Playfair Display and Lora, SIL Open Font License 1.1. The App Store screenshots use the photo <a href="https://commons.wikimedia.org/wiki/File:Polonezk%C3%B6y_nature_panorama.jpg" rel="noopener">“Polonezköy nature panorama”</a> by Darwinek (CC BY-SA 3.0) as a background; the other backgrounds are in the public domain.</p>
+            <p data-i18n="privacy.srcBody">The pictures come from <a href="https://commons.wikimedia.org/" rel="noopener">Wikimedia Commons</a> and are in the public domain (including CC0) or under Creative Commons licences (CC BY and CC BY-SA, versions 3.0 and 4.0). Every picture shows its author, source and licence under the image, and the full list is in the app under <strong>Settings › Credits &amp; licences</strong>. Every story lists its sources. Map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>, available under the Open Database License (ODbL). Fonts: Playfair Display and Lora, SIL Open Font License 1.1. The App Store and Google Play screenshots use the photo <a href="https://commons.wikimedia.org/wiki/File:Polonezk%C3%B6y_nature_panorama.jpg" rel="noopener">“Polonezköy nature panorama”</a> by Darwinek (CC BY-SA 3.0) as a background; the other backgrounds are in the public domain.</p>
           </section>
           <section class="policy-section">
             <h2 data-i18n="privacy.changeTitle">15. Changes</h2>
@@ -208,7 +208,7 @@
             <h2 data-i18n="privacy.contactTitle">16. Contact</h2>
             <p data-i18n="privacy.contactBody">Mehmet Gökhan Memik (thebarnapp), Istanbul, Türkiye – <a href="mailto:app@save-all.com">app@save-all.com</a></p>
           </section>
-          <p class="updated" data-i18n="privacy.updated">Effective date: 11 November 2026</p>
+          <p class="updated" data-i18n="privacy.updated">Effective date: 14 November 2026</p>
         </article>
       </div>
     </main>
