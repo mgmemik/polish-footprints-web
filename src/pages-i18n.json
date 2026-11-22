@@ -1,0 +1,298 @@
+{
+  "_comment": "UI texts of the generated place/walk pages (tools/build_pages.py). Every key needs en, pl and tr. {x} are placeholders. Plural entries are lists: en/tr [one, other], pl [one, few, many]. Not published (src/ is excluded from Pages).",
+  "crumb.label": {
+    "en": "You are here",
+    "pl": "Jesteś tutaj",
+    "tr": "Buradasınız"
+  },
+  "crumb.home": {
+    "en": "Home",
+    "pl": "Strona główna",
+    "tr": "Ana sayfa"
+  },
+  "crumb.places": {
+    "en": "Places and walks",
+    "pl": "Miejsca i spacery",
+    "tr": "Yerler ve yürüyüşler"
+  },
+  "count.places": {
+    "en": ["{n} place", "{n} places"],
+    "pl": ["{n} miejsce", "{n} miejsca", "{n} miejsc"],
+    "tr": ["{n} yer", "{n} yer"]
+  },
+  "count.walks": {
+    "en": ["{n} walk", "{n} walks"],
+    "pl": ["{n} spacer", "{n} spacery", "{n} spacerów"],
+    "tr": ["{n} yürüyüş", "{n} yürüyüş"]
+  },
+  "count.stops": {
+    "en": ["{n} stop", "{n} stops"],
+    "pl": ["{n} przystanek", "{n} przystanki", "{n} przystanków"],
+    "tr": ["{n} durak", "{n} durak"]
+  },
+  "time.min": {
+    "en": "{m} min",
+    "pl": "{m} min",
+    "tr": "{m} dk"
+  },
+  "time.h": {
+    "en": "{h} h",
+    "pl": "{h} godz.",
+    "tr": "{h} sa"
+  },
+  "time.hmin": {
+    "en": "{h} h {m} min",
+    "pl": "{h} godz. {m} min",
+    "tr": "{h} sa {m} dk"
+  },
+  "time.about": {
+    "en": "about {d}",
+    "pl": "ok. {d}",
+    "tr": "yaklaşık {d}"
+  },
+  "list.metaTitle": {
+    "en": "Polish history in Istanbul: {places} and {walks}",
+    "pl": "Polskie ślady w Stambule: {places} i {walks}",
+    "tr": "İstanbul'da Polonya izleri: {places} ve {walks}"
+  },
+  "list.metaDesc": {
+    "en": "Every place in Istanbul linked to Polish history – Polonezköy (Adampol), the Adam Mickiewicz Museum, Roxelana, the Commonwealth's envoys, the 1939 gold – with its story, how to visit and a map link.",
+    "pl": "Miejsca w Stambule związane z historią Polski – Polonezköy (Adampol), Muzeum Adama Mickiewicza, Roksolana, posłowie Rzeczypospolitej, złoto z 1939 roku – z historią, wskazówkami, jak zwiedzać, i linkiem do mapy.",
+    "tr": "İstanbul'da Polonya tarihine bağlı yerler – Polonezköy (Adampol), Adam Mickiewicz Müzesi, Hürrem Sultan, Lehistan elçileri, 1939 altınları – hikâyesi, ziyaret bilgisi ve harita bağlantısıyla."
+  },
+  "list.h1": {
+    "en": "Polish places in Istanbul",
+    "pl": "Polskie miejsca w Stambule",
+    "tr": "İstanbul'daki Polonya izleri"
+  },
+  "list.lead": {
+    "en": "{places} where Poles left their mark on Istanbul, grouped by theme, and {walks} that link them. Each page tells the story, explains how to visit and shows where to find it.",
+    "pl": "{places}, w których Polacy zostawili ślad w Stambule, pogrupowanych według tematów, i {walks}, które je łączą. Na stronie każdego miejsca znajdziesz jego historię, wskazówki, jak je zwiedzić, i położenie na mapie.",
+    "tr": "Polonyalıların İstanbul'da iz bıraktığı {places}, temalarına göre gruplanmış olarak, ve bu yerleri birbirine bağlayan {walks}. Her yerin sayfasında hikâyesini, nasıl gezileceğini ve haritadaki konumunu bulabilirsiniz."
+  },
+  "list.themes": {
+    "en": "Themes",
+    "pl": "Tematy",
+    "tr": "Temalar"
+  },
+  "list.walksTitle": {
+    "en": "Walks",
+    "pl": "Spacery",
+    "tr": "Yürüyüşler"
+  },
+  "list.walksLead": {
+    "en": "Each walk links the places of one story, stop by stop. The times are rough guides for walking and looking.",
+    "pl": "Każdy spacer łączy miejsca jednej historii, przystanek po przystanku. Podane czasy są orientacyjne – obejmują marsz i zwiedzanie.",
+    "tr": "Her yürüyüş, tek bir hikâyenin yerlerini durak durak birbirine bağlar. Süreler yürüme ve gezme için yaklaşık değerlerdir."
+  },
+  "place.metaTitle": {
+    "en": "{name} – Polish history in Istanbul",
+    "pl": "{name} – polskie ślady w Stambule",
+    "tr": "{name} – İstanbul'daki Polonya izleri"
+  },
+  "place.facts": {
+    "en": "Key facts",
+    "pl": "Najważniejsze informacje",
+    "tr": "Kısa bilgiler"
+  },
+  "place.theme": {
+    "en": "Theme",
+    "pl": "Temat",
+    "tr": "Tema"
+  },
+  "place.district": {
+    "en": "District",
+    "pl": "Dzielnica",
+    "tr": "Semt"
+  },
+  "place.period": {
+    "en": "Period",
+    "pl": "Okres",
+    "tr": "Dönem"
+  },
+  "place.access": {
+    "en": "Visiting",
+    "pl": "Zwiedzanie",
+    "tr": "Ziyaret"
+  },
+  "visitable.open": {
+    "en": "Open to visitors",
+    "pl": "Otwarte dla zwiedzających",
+    "tr": "Ziyarete açık"
+  },
+  "visitable.restricted": {
+    "en": "Limited access",
+    "pl": "Ograniczony dostęp",
+    "tr": "Sınırlı giriş"
+  },
+  "visitable.exterior_only": {
+    "en": "Seen from outside",
+    "pl": "Do obejrzenia z zewnątrz",
+    "tr": "Dışarıdan görülür"
+  },
+  "visitable.gone": {
+    "en": "No longer exists",
+    "pl": "Już nie istnieje",
+    "tr": "Artık yok"
+  },
+  "place.story": {
+    "en": "The story",
+    "pl": "Historia",
+    "tr": "Hikâye"
+  },
+  "place.visit": {
+    "en": "How to visit",
+    "pl": "Jak zwiedzać",
+    "tr": "Nasıl gezilir"
+  },
+  "place.people": {
+    "en": "People",
+    "pl": "Postaci",
+    "tr": "Kişiler"
+  },
+  "place.sources": {
+    "en": "Sources",
+    "pl": "Źródła",
+    "tr": "Kaynaklar"
+  },
+  "place.location": {
+    "en": "Location",
+    "pl": "Położenie",
+    "tr": "Konum"
+  },
+  "place.coords": {
+    "en": "Coordinates",
+    "pl": "Współrzędne",
+    "tr": "Koordinatlar"
+  },
+  "place.coordsApprox": {
+    "en": "The map position is approximate.",
+    "pl": "Położenie na mapie jest przybliżone.",
+    "tr": "Haritadaki konum yaklaşıktır."
+  },
+  "place.osm": {
+    "en": "Open in OpenStreetMap",
+    "pl": "Otwórz w OpenStreetMap",
+    "tr": "OpenStreetMap'te aç"
+  },
+  "place.google": {
+    "en": "Open in Google Maps",
+    "pl": "Otwórz w Mapach Google",
+    "tr": "Google Haritalar'da aç"
+  },
+  "place.apple": {
+    "en": "Open in Apple Maps",
+    "pl": "Otwórz w Mapach Apple",
+    "tr": "Apple Haritalar'da aç"
+  },
+  "place.nearby": {
+    "en": "Nearby",
+    "pl": "W pobliżu",
+    "tr": "Yakındaki yerler"
+  },
+  "place.walks": {
+    "en": "Walks with this place",
+    "pl": "Spacery z tym miejscem",
+    "tr": "Bu yerin geçtiği yürüyüşler"
+  },
+  "place.stopOf": {
+    "en": "stop {n} of {total}",
+    "pl": "przystanek {n} z {total}",
+    "tr": "{total} duraklı yürüyüşün {n}. durağı"
+  },
+  "place.pictureSource": {
+    "en": "source",
+    "pl": "źródło",
+    "tr": "kaynak"
+  },
+  "place.ctaTitle": {
+    "en": "Read the full story in the app",
+    "pl": "Przeczytaj całą historię w aplikacji",
+    "tr": "Hikâyenin tamamını uygulamada okuyun"
+  },
+  "place.ctaBody": {
+    "en": "This is only the opening of the story. The Polish Footprints: Istanbul app tells it in full, with all the pictures, directions to the place and the walks that pass by.",
+    "pl": "To dopiero początek tej historii. W aplikacji Polskie ślady: Stambuł przeczytasz ją w całości – ze wszystkimi zdjęciami, wskazówkami dojazdu i spacerami, które tędy prowadzą.",
+    "tr": "Bu, hikâyenin yalnızca başlangıcı. Polonya İzleri: İstanbul uygulamasında hikâyenin tamamını; tüm görselleri, yol tarifini ve buradan geçen yürüyüşleri bulabilirsiniz."
+  },
+  "place.appTitle": {
+    "en": "Take this place with you",
+    "pl": "Zabierz to miejsce ze sobą",
+    "tr": "Bu yeri yanınızda taşıyın"
+  },
+  "place.appBody": {
+    "en": "In the app this place sits on the map with its pictures, a Directions button and the walks that pass by – the stories work without mobile data.",
+    "pl": "W aplikacji to miejsce czeka na mapie – ze zdjęciami, przyciskiem „Wskazówki dojazdu” i spacerami, które tędy prowadzą. Historie działają bez internetu.",
+    "tr": "Uygulamada bu yer, görselleri, yol tarifi düğmesi ve buradan geçen yürüyüşlerle haritada sizi bekliyor; hikâyeler internet olmadan da açılır."
+  },
+  "walk.metaTitle": {
+    "en": "{name} – a Polish history walk in Istanbul",
+    "pl": "{name} – spacer śladami Polaków w Stambule",
+    "tr": "{name} – İstanbul'da Polonya izlerinde yürüyüş"
+  },
+  "walk.eyebrow": {
+    "en": "Walk",
+    "pl": "Spacer",
+    "tr": "Yürüyüş"
+  },
+  "walk.stops": {
+    "en": "Stops",
+    "pl": "Przystanki",
+    "tr": "Duraklar"
+  },
+  "walk.mode.walking": {
+    "en": "on foot",
+    "pl": "pieszo",
+    "tr": "yürüyerek"
+  },
+  "walk.mode.ferry": {
+    "en": "on foot, by ferry and public transport",
+    "pl": "pieszo, promem i komunikacją miejską",
+    "tr": "yürüyerek, vapurla ve toplu taşımayla"
+  },
+  "walk.ferryBefore": {
+    "en": "Across the water: take the ferry to this stop.",
+    "pl": "Po drugiej stronie wody – tu dopływasz promem.",
+    "tr": "Karşı kıyıda: bu durağa vapurla geçilir."
+  },
+  "walk.free": {
+    "en": "Free in the app",
+    "pl": "Bezpłatny w aplikacji",
+    "tr": "Uygulamada ücretsiz"
+  },
+  "walk.map": {
+    "en": "On the map",
+    "pl": "Na mapie",
+    "tr": "Haritada"
+  },
+  "walk.route": {
+    "en": "Open the walking route in Google Maps",
+    "pl": "Otwórz trasę pieszą w Mapach Google",
+    "tr": "Yürüyüş rotasını Google Haritalar'da aç"
+  },
+  "walk.routeNote": {
+    "en": "Each stop's page links to OpenStreetMap, Google Maps and Apple Maps.",
+    "pl": "Na stronie każdego przystanku znajdziesz linki do OpenStreetMap, Map Google i Map Apple.",
+    "tr": "Her durağın sayfasında OpenStreetMap, Google Haritalar ve Apple Haritalar bağlantıları var."
+  },
+  "walk.transitNote": {
+    "en": "Part of this walk is by ferry or public transport, so plan each leg from one stop to the next.",
+    "pl": "Część tej trasy pokonuje się promem lub komunikacją miejską, więc zaplanuj osobno każdy odcinek między przystankami.",
+    "tr": "Bu yürüyüşün bir kısmı vapurla ya da toplu taşımayla yapılır; her durak arasındaki yolu ayrı planlayın."
+  },
+  "walk.ctaTitle": {
+    "en": "Take this walk with the app",
+    "pl": "Przejdź ten spacer z aplikacją",
+    "tr": "Bu yürüyüşü uygulamayla yapın"
+  },
+  "walk.ctaBody": {
+    "en": "The app tells the story at every stop, hands the walk to Apple Maps or Google Maps and keeps track of the stops you have visited.",
+    "pl": "Aplikacja opowie historię każdego przystanku, przekaże trasę do Map Apple lub Map Google i zaznaczy przystanki, które masz już za sobą.",
+    "tr": "Uygulama her durağın hikâyesini anlatır, yürüyüşü Apple Haritalar'a ya da Google Haritalar'a aktarır ve hangi duraklara gittiğinizi aklında tutar."
+  },
+  "redirect.text": {
+    "en": "This page has moved:",
+    "pl": "Ta strona jest tutaj:",
+    "tr": "Bu sayfa taşındı:"
+  }
+}

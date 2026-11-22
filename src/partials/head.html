@@ -14,15 +14,16 @@
           t = window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
         }
         d.setAttribute("data-theme", t);
+        if (d.hasAttribute("data-fixed-lang")) return; /* pages pre-rendered in one language */
         try { l = (q && q.get("lang")) || localStorage.getItem("pf_lang"); } catch (e) {}
         if (l === "pl" || l === "tr" || l === "en") d.lang = l;
       })();
     </script>
-    <link rel="canonical" href="{{site}}{{path}}" data-canonical-base="{{site}}{{path}}" />
-    <link rel="alternate" hreflang="en" href="{{site}}{{path}}" />
-    <link rel="alternate" hreflang="pl" href="{{site}}{{path}}?lang=pl" />
-    <link rel="alternate" hreflang="tr" href="{{site}}{{path}}?lang=tr" />
-    <link rel="alternate" hreflang="x-default" href="{{site}}{{path}}" />
+    <link rel="canonical" href="{{canonical}}"{{canonical_attrs}} />
+    <link rel="alternate" hreflang="en" href="{{alt_en}}" />
+    <link rel="alternate" hreflang="pl" href="{{alt_pl}}" />
+    <link rel="alternate" hreflang="tr" href="{{alt_tr}}" />
+    <link rel="alternate" hreflang="x-default" href="{{alt_en}}" />
     <link rel="icon" href="{{root}}favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{root}}assets/img/icon-32.png" />
     <link rel="apple-touch-icon" href="{{root}}assets/img/icon-180.png" />
@@ -32,13 +33,13 @@
     <link rel="stylesheet" href="{{root}}assets/styles.css" />
     <meta name="apple-itunes-app" content="app-id=6833051676" />
     <meta property="og:site_name" content="Polish Footprints: Istanbul" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{site}}{{path}}" />
-    <meta property="og:image" content="{{site}}assets/img/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:locale:alternate" content="pl_PL" />
-    <meta property="og:locale:alternate" content="tr_TR" />
+    <meta property="og:type" content="{{og_type}}" />
+    <meta property="og:url" content="{{canonical}}" />
+    <meta property="og:image" content="{{og_image}}" />
+    <meta property="og:image:width" content="{{og_image_w}}" />
+    <meta property="og:image:height" content="{{og_image_h}}" />
+    <meta property="og:locale" content="{{og_locale}}" />
+    <meta property="og:locale:alternate" content="{{og_locale_alt1}}" />
+    <meta property="og:locale:alternate" content="{{og_locale_alt2}}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="{{site}}assets/img/og-image.png" />
+    <meta name="twitter:image" content="{{og_image}}" />

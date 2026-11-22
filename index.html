@@ -18,14 +18,15 @@
           t = window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
         }
         d.setAttribute("data-theme", t);
+        if (d.hasAttribute("data-fixed-lang")) return; /* pages pre-rendered in one language */
         try { l = (q && q.get("lang")) || localStorage.getItem("pf_lang"); } catch (e) {}
         if (l === "pl" || l === "tr" || l === "en") d.lang = l;
       })();
     </script>
-    <link rel="canonical" href="https://mgmemik.github.io/polish-footprints-web/" data-canonical-base="https://mgmemik.github.io/polish-footprints-web/" />
+    <link rel="canonical" href="https://mgmemik.github.io/polish-footprints-web/" data-canonical-base="https://mgmemik.github.io/polish-footprints-web/" data-canonical-pl="https://mgmemik.github.io/polish-footprints-web/pl/" data-canonical-tr="https://mgmemik.github.io/polish-footprints-web/tr/" />
     <link rel="alternate" hreflang="en" href="https://mgmemik.github.io/polish-footprints-web/" />
-    <link rel="alternate" hreflang="pl" href="https://mgmemik.github.io/polish-footprints-web/?lang=pl" />
-    <link rel="alternate" hreflang="tr" href="https://mgmemik.github.io/polish-footprints-web/?lang=tr" />
+    <link rel="alternate" hreflang="pl" href="https://mgmemik.github.io/polish-footprints-web/pl/" />
+    <link rel="alternate" hreflang="tr" href="https://mgmemik.github.io/polish-footprints-web/tr/" />
     <link rel="alternate" hreflang="x-default" href="https://mgmemik.github.io/polish-footprints-web/" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png" />
@@ -175,6 +176,7 @@
         </a>
         <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:common.navLabel">
           <a class="nav-link" href="./" data-nav="home" data-i18n="common.navHome">Home</a>
+          <a class="nav-link" href="en/places/" data-href-pl="pl/miejsca/" data-href-tr="tr/yerler/" data-nav="places" data-i18n="common.navPlaces">Places</a>
           <a class="nav-link" href="privacy/" data-nav="privacy" data-i18n="common.navPrivacy">Privacy</a>
           <a class="nav-link" href="support/" data-nav="support" data-i18n="common.navSupport">Support</a>
         </nav>
@@ -204,7 +206,7 @@
             <div class="tile-rule" aria-hidden="true"><i></i><i></i><i></i></div>
             <p class="lead" data-i18n="home.lead">A map and pocket guide to 38 places where Poles left their mark on Istanbul – from Adampol, the Polish village in the forests above the Bosphorus, to the house where Adam Mickiewicz died, the gates through which the Commonwealth's envoys rode to the sultan and the quay where Poland's gold passed through in 1939. Pick a place, read its story and walk there.</p>
           <div class="stores">
-            <a class="store-btn" href="https://apps.apple.com/app/id6833051676" rel="noopener">
+            <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6833051676?pt=127856308&amp;ct=web-home&amp;mt=8" rel="noopener">
               <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 18.5h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
               <span><small data-i18n="common.storeAppleSmall">Download on the</small><strong data-i18n="common.storeApple">App Store</strong></span>
             </a>
@@ -237,6 +239,7 @@
             <article class="card theme" style="--cat:#C8102E"><h3 data-i18n="home.t8Title">1939–1945</h3><p data-i18n="home.t8Body">In September 1939 the gold reserves of the Bank of Poland passed through Istanbul: from a British ship anchored off Kabataş to a train at Haydarpaşa bound for Beirut.</p></article>
             <article class="card theme" style="--cat:#3C7A89"><h3 data-i18n="home.t9Title">Polish Istanbul today</h3><p data-i18n="home.t9Body">The villagers of Polonezköy, the Polish Mass at St Anthony's and the Consulate General in Maslak, today's address of Polish diplomacy on the Bosphorus.</p></article>
           </div>
+          <p class="more-link"><a href="en/places/" data-href-pl="pl/miejsca/" data-href-tr="tr/yerler/" data-i18n="home.placesLink">See all 38 places and their stories →</a></p>
         </div>
       </section>
 
@@ -286,16 +289,17 @@
           <div class="tile-rule" aria-hidden="true"><i></i><i></i><i></i></div>
           <p class="section-lead" data-i18n="home.walksLead">Each walk links places that belong to one story. The times are rough guides for walking and looking, without museum visits.</p>
           <ol class="walks">
-            <li class="walk free"><p class="walk-name"><span data-i18n="home.w1Name">Mickiewicz's Pera</span> <span class="tag" data-i18n="home.freeTag">Free</span></p><p class="walk-meta" data-i18n="home.w1Meta">6 stops · about 2 h 45 min · from Galata to Feriköy, with the Tünel funicular and the metro</p></li>
-            <li class="walk free"><p class="walk-name"><span data-i18n="home.w2Name">Sadyk Pasha and the Sultan's Painter</span> <span class="tag" data-i18n="home.freeTag">Free</span></p><p class="walk-meta" data-i18n="home.w2Meta">2 stops · about 1 h 30 min · downhill from Cihangir to Dolmabahçe on the Bosphorus</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w3Name">Adampol: a Polish Village by the Bosphorus</p><p class="walk-meta" data-i18n="home.w3Meta">9 stops · about 2 h · on foot through the village, which you reach by taxi or bus</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w4Name">Sultans and Envoys</p><p class="walk-meta" data-i18n="home.w4Meta">9 stops · about 3 h · the old city, from the Column of Constantine to Topkapı Palace</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w5Name">In Roxelana's Footsteps</p><p class="walk-meta" data-i18n="home.w5Meta">3 stops · about 2 h · Haseki, the Süleymaniye and Sultanahmet</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w6Name">Khotyn and the Seven Towers</p><p class="walk-meta" data-i18n="home.w6Meta">2 stops · about 2 h 30 min · Sultanahmet and Yedikule, by tram or Marmaray</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w7Name">The 1939 Gold and the General</p><p class="walk-meta" data-i18n="home.w7Meta">3 stops · about 2 h 30 min · Kabataş, then by ferry to Kadıköy and Haydarpaşa</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w8Name">John Paul II in Istanbul, 1979</p><p class="walk-meta" data-i18n="home.w8Meta">4 stops · about 3 h 30 min · Harbiye, İstiklal, Fener and Kumkapı, by public transport</p></li>
+            <li class="walk free"><p class="walk-name"><a class="walk-link" href="en/walks/mickiewicz-pera/" data-href-pl="pl/spacery/mickiewicz-pera/" data-href-tr="tr/yuruyusler/mickiewicz-pera/"><span data-i18n="home.w1Name">Mickiewicz's Pera</span></a> <span class="tag" data-i18n="home.freeTag">Free</span></p><p class="walk-meta" data-i18n="home.w1Meta">6 stops · about 2 h 45 min · from Galata to Feriköy, with the Tünel funicular and the metro</p></li>
+            <li class="walk free"><p class="walk-name"><a class="walk-link" href="en/walks/sadyk-cihangir-dolmabahce/" data-href-pl="pl/spacery/sadyk-cihangir-dolmabahce/" data-href-tr="tr/yuruyusler/sadyk-cihangir-dolmabahce/"><span data-i18n="home.w2Name">Sadyk Pasha and the Sultan's Painter</span></a> <span class="tag" data-i18n="home.freeTag">Free</span></p><p class="walk-meta" data-i18n="home.w2Meta">2 stops · about 1 h 30 min · downhill from Cihangir to Dolmabahçe on the Bosphorus</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" href="en/walks/adampol-village/" data-href-pl="pl/spacery/adampol-village/" data-href-tr="tr/yuruyusler/adampol-village/"><span data-i18n="home.w3Name">Adampol: a Polish Village by the Bosphorus</span></a></p><p class="walk-meta" data-i18n="home.w3Meta">9 stops · about 2 h · on foot through the village, which you reach by taxi or bus</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" href="en/walks/sultans-and-envoys/" data-href-pl="pl/spacery/sultans-and-envoys/" data-href-tr="tr/yuruyusler/sultans-and-envoys/"><span data-i18n="home.w4Name">Sultans and Envoys</span></a></p><p class="walk-meta" data-i18n="home.w4Meta">9 stops · about 3 h · the old city, from the Column of Constantine to Topkapı Palace</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" href="en/walks/roksolana/" data-href-pl="pl/spacery/roksolana/" data-href-tr="tr/yuruyusler/roksolana/"><span data-i18n="home.w5Name">In Roxelana's Footsteps</span></a></p><p class="walk-meta" data-i18n="home.w5Meta">3 stops · about 2 h · Haseki, the Süleymaniye and Sultanahmet</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" href="en/walks/chocim-yedikule/" data-href-pl="pl/spacery/chocim-yedikule/" data-href-tr="tr/yuruyusler/chocim-yedikule/"><span data-i18n="home.w6Name">Khotyn and the Seven Towers</span></a></p><p class="walk-meta" data-i18n="home.w6Meta">2 stops · about 2 h 30 min · Sultanahmet and Yedikule, by tram or Marmaray</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" href="en/walks/gold-1939/" data-href-pl="pl/spacery/gold-1939/" data-href-tr="tr/yuruyusler/gold-1939/"><span data-i18n="home.w7Name">The 1939 Gold and the General</span></a></p><p class="walk-meta" data-i18n="home.w7Meta">3 stops · about 2 h 30 min · Kabataş, then by ferry to Kadıköy and Haydarpaşa</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" href="en/walks/john-paul-ii-1979/" data-href-pl="pl/spacery/john-paul-ii-1979/" data-href-tr="tr/yuruyusler/john-paul-ii-1979/"><span data-i18n="home.w8Name">John Paul II in Istanbul, 1979</span></a></p><p class="walk-meta" data-i18n="home.w8Meta">4 stops · about 3 h 30 min · Harbiye, İstiklal, Fener and Kumkapı, by public transport</p></li>
           </ol>
           <p class="note" data-i18n="home.walksNote">Opening hours change – each place in the app tells you what to check before you go.</p>
+          <p class="more-link"><a href="en/places/#walks" data-href-pl="pl/miejsca/#spacery" data-href-tr="tr/yerler/#yuruyusler" data-i18n="home.walksLink">All 8 walks, stop by stop →</a></p>
         </div>
       </section>
 
@@ -353,7 +357,7 @@
             <h2 id="cta-title" data-i18n="home.ctaTitle">Take Polish Istanbul with you</h2>
             <p data-i18n="home.ctaLead">38 places, 8 walks, one map – free to try.</p>
           <div class="stores">
-            <a class="store-btn" href="https://apps.apple.com/app/id6833051676" rel="noopener">
+            <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6833051676?pt=127856308&amp;ct=web-home&amp;mt=8" rel="noopener">
               <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 18.5h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
               <span><small data-i18n="common.storeAppleSmall">Download on the</small><strong data-i18n="common.storeApple">App Store</strong></span>
             </a>
@@ -372,6 +376,7 @@
         <p data-i18n="common.footerContact">Contact: <a href="mailto:app@save-all.com">app@save-all.com</a></p>
         <nav class="footer-nav" aria-label="Footer" data-i18n-attr="aria-label:common.footerNavLabel">
           <a href="./" data-i18n="common.navHome">Home</a>
+          <a href="en/places/" data-href-pl="pl/miejsca/" data-href-tr="tr/yerler/" data-i18n="common.navPlaces">Places</a>
           <a href="privacy/" data-i18n="common.navPrivacy">Privacy</a>
           <a href="support/" data-i18n="common.navSupport">Support</a>
         </nav>

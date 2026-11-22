@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-page="home">
+<html lang="{{html_lang}}" data-page="home"{{html_attrs}}>
   <head>
 {{> head}}
     <title data-i18n="home.metaTitle">{{a:home.metaTitle}}</title>
@@ -45,7 +45,7 @@
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-art">
-          <img src="assets/img/hero.svg" width="1920" height="720" alt="" fetchpriority="high" />
+          <img src="{{root}}assets/img/hero.svg" width="1920" height="720" alt="" fetchpriority="high" />
         </div>
         <div class="container">
           <div class="hero-card folio">
@@ -80,6 +80,7 @@
             <article class="card theme" style="--cat:#C8102E"><h3 data-i18n="home.t8Title">{{t:home.t8Title}}</h3><p data-i18n="home.t8Body">{{t:home.t8Body}}</p></article>
             <article class="card theme" style="--cat:#3C7A89"><h3 data-i18n="home.t9Title">{{t:home.t9Title}}</h3><p data-i18n="home.t9Body">{{t:home.t9Body}}</p></article>
           </div>
+          <p class="more-link"><a href="{{places_href}}"{{places_attrs}} data-i18n="home.placesLink">{{t:home.placesLink}}</a></p>
         </div>
       </section>
 
@@ -129,16 +130,17 @@
           <div class="tile-rule" aria-hidden="true"><i></i><i></i><i></i></div>
           <p class="section-lead" data-i18n="home.walksLead">{{t:home.walksLead}}</p>
           <ol class="walks">
-            <li class="walk free"><p class="walk-name"><span data-i18n="home.w1Name">{{t:home.w1Name}}</span> <span class="tag" data-i18n="home.freeTag">{{t:home.freeTag}}</span></p><p class="walk-meta" data-i18n="home.w1Meta">{{t:home.w1Meta}}</p></li>
-            <li class="walk free"><p class="walk-name"><span data-i18n="home.w2Name">{{t:home.w2Name}}</span> <span class="tag" data-i18n="home.freeTag">{{t:home.freeTag}}</span></p><p class="walk-meta" data-i18n="home.w2Meta">{{t:home.w2Meta}}</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w3Name">{{t:home.w3Name}}</p><p class="walk-meta" data-i18n="home.w3Meta">{{t:home.w3Meta}}</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w4Name">{{t:home.w4Name}}</p><p class="walk-meta" data-i18n="home.w4Meta">{{t:home.w4Meta}}</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w5Name">{{t:home.w5Name}}</p><p class="walk-meta" data-i18n="home.w5Meta">{{t:home.w5Meta}}</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w6Name">{{t:home.w6Name}}</p><p class="walk-meta" data-i18n="home.w6Meta">{{t:home.w6Meta}}</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w7Name">{{t:home.w7Name}}</p><p class="walk-meta" data-i18n="home.w7Meta">{{t:home.w7Meta}}</p></li>
-            <li class="walk"><p class="walk-name" data-i18n="home.w8Name">{{t:home.w8Name}}</p><p class="walk-meta" data-i18n="home.w8Meta">{{t:home.w8Meta}}</p></li>
+            <li class="walk free"><p class="walk-name"><a class="walk-link" {{walk_link_1}}><span data-i18n="home.w1Name">{{t:home.w1Name}}</span></a> <span class="tag" data-i18n="home.freeTag">{{t:home.freeTag}}</span></p><p class="walk-meta" data-i18n="home.w1Meta">{{t:home.w1Meta}}</p></li>
+            <li class="walk free"><p class="walk-name"><a class="walk-link" {{walk_link_2}}><span data-i18n="home.w2Name">{{t:home.w2Name}}</span></a> <span class="tag" data-i18n="home.freeTag">{{t:home.freeTag}}</span></p><p class="walk-meta" data-i18n="home.w2Meta">{{t:home.w2Meta}}</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" {{walk_link_3}}><span data-i18n="home.w3Name">{{t:home.w3Name}}</span></a></p><p class="walk-meta" data-i18n="home.w3Meta">{{t:home.w3Meta}}</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" {{walk_link_4}}><span data-i18n="home.w4Name">{{t:home.w4Name}}</span></a></p><p class="walk-meta" data-i18n="home.w4Meta">{{t:home.w4Meta}}</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" {{walk_link_5}}><span data-i18n="home.w5Name">{{t:home.w5Name}}</span></a></p><p class="walk-meta" data-i18n="home.w5Meta">{{t:home.w5Meta}}</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" {{walk_link_6}}><span data-i18n="home.w6Name">{{t:home.w6Name}}</span></a></p><p class="walk-meta" data-i18n="home.w6Meta">{{t:home.w6Meta}}</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" {{walk_link_7}}><span data-i18n="home.w7Name">{{t:home.w7Name}}</span></a></p><p class="walk-meta" data-i18n="home.w7Meta">{{t:home.w7Meta}}</p></li>
+            <li class="walk"><p class="walk-name"><a class="walk-link" {{walk_link_8}}><span data-i18n="home.w8Name">{{t:home.w8Name}}</span></a></p><p class="walk-meta" data-i18n="home.w8Meta">{{t:home.w8Meta}}</p></li>
           </ol>
           <p class="note" data-i18n="home.walksNote">{{t:home.walksNote}}</p>
+          <p class="more-link"><a href="{{places_href}}{{walks_anchor}}"{{walks_attrs}} data-i18n="home.walksLink">{{t:home.walksLink}}</a></p>
         </div>
       </section>
 
@@ -192,7 +194,7 @@
       <section class="section cta" aria-labelledby="cta-title">
         <div class="container">
           <div class="cta-card folio">
-            <img src="assets/img/icon-180.png" width="88" height="88" alt="" class="cta-icon" loading="lazy" />
+            <img src="{{root}}assets/img/icon-180.png" width="88" height="88" alt="" class="cta-icon" loading="lazy" />
             <h2 id="cta-title" data-i18n="home.ctaTitle">{{t:home.ctaTitle}}</h2>
             <p data-i18n="home.ctaLead">{{t:home.ctaLead}}</p>
 {{> stores}}

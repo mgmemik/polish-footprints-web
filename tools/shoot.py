@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Screenshots of every page (PL/EN/TR, dark/light, desktop/mobile) into _screens/ (never published).
 
-    python3 tools/shoot.py [filter]
+    python3 tools/shoot.py [filter]     # e.g. "gen-" for the generated page types only
 
 Serves the site on 127.0.0.1:8765 for the duration of the run. Headless Chrome writes the
 screenshot but does not always exit, so each Chrome is stopped once its file is complete.
@@ -15,6 +15,14 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 OUT = ROOT / "_screens"
 PAGES = [("home", ""), ("privacy", "privacy/"), ("support", "support/")]
 SIZES = [("desktop", 1280, 6400), ("mobile", 390, 9000)]  # mobile: a 390 px iframe in a 390 px clip
+# Pages pre-rendered in one language (tools/build_pages.py): one example of each type, phone width.
+GENERATED = [
+    ("gen-place-premium-pl", "pl/miejsca/adampol-village-centre/", "dark"),
+    ("gen-place-free-en", "en/places/mickiewicz-museum/", "light"),
+    ("gen-walk-tr", "tr/yuruyusler/gold-1939/", "dark"),
+    ("gen-list-pl", "pl/miejsca/", "light"),
+    ("gen-home-tr", "tr/", "dark"),
+]
 
 
 class Quiet(http.server.SimpleHTTPRequestHandler):
@@ -62,6 +70,11 @@ def main():
                             if label == "mobile":
                                 url = "http://127.0.0.1:8765/tools/mobile-frame.html?src=" + quote(url, safe="")
                             shoot(name, url, w, h)
+        for name, path, theme in GENERATED:
+            name = f"{name}-{theme}-mobile"
+            if flt in name:
+                url = f"http://127.0.0.1:8765/{path}?theme={theme}"
+                shoot(name, "http://127.0.0.1:8765/tools/mobile-frame.html?src=" + quote(url, safe=""), 390, 9000)
     finally:
         srv.shutdown()
 

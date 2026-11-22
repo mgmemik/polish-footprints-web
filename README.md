@@ -10,12 +10,16 @@ Live (after publishing): <https://mgmemik.github.io/polish-footprints-web/>
 
 | Page | Path |
 |---|---|
-| Home (marketing) | `/` |
+| Home (marketing) | `/` (pre-rendered copies: `/pl/`, `/tr/`) |
 | Privacy policy | `/privacy/` |
 | Support | `/support/` |
+| Places and walks (lists) | `/pl/miejsca/`, `/en/places/`, `/tr/yerler/` |
+| One page per place | `/pl/miejsca/<id>/`, `/en/places/<id>/`, `/tr/yerler/<id>/` |
+| One page per walk | `/pl/spacery/<id>/`, `/en/walks/<id>/`, `/tr/yuruyusler/<id>/` |
 
-Languages: **Polish, English, Turkish** (PL / EN / TR switch). English is baked into the HTML;
-`assets/site.js` swaps in Polish or Turkish. Which language a visitor sees: `?lang=pl|en|tr` in the
+Languages: **Polish, English, Turkish** (PL / EN / TR switch). On `/`, `/privacy/` and `/support/`
+English is baked into the HTML and `assets/site.js` swaps in Polish or Turkish; all other pages are
+pre-rendered in one language (see "Place and walk pages" below). Which language a visitor sees: `?lang=pl|en|tr` in the
 URL, else their saved choice (localStorage `pf_lang`), else the browser (pl → Polish, tr → Turkish,
 anything else → English). Links between the three pages keep `?lang=`.
 
@@ -84,6 +88,62 @@ that is switched off while there are no screenshots. To switch it on:
 4. `python3 tools/build.py` - the section appears between "Start free" and the FAQ, with
    "A look inside the app" (`home.screensTitle`/`home.screensLead`, already translated).
 
+## Place and walk pages
+
+`python3 -I tools/build.py` also runs `tools/build_pages.py`, which turns the app's content file
+`../app/assets/data/pois.json` (38 places, 8 walks) into static pages, each fully pre-rendered in
+its language so that search engines see Polish and Turkish too (no JavaScript needed to read them):
+
+- `/pl/` and `/tr/`: the home page (`src/index.html`) with the Polish / Turkish texts baked in.
+  `/` now names them in its hreflang links, and `/?lang=pl` / `/?lang=tr` point their canonical
+  at them (the `?lang=` URLs keep working exactly as before).
+- the list pages (all places grouped by theme, then the walks), one page per place and one per walk,
+  in each language. Place ids and walk ids are the ones from `pois.json`; the folder names are
+  `miejsca`/`spacery` (pl), `places`/`walks` (en), `yerler`/`yuruyusler` (tr). `/en/`, `/en/walks/`,
+  `/pl/spacery/` and `/tr/yuruyusler/` are small noindex redirects to the right page.
+- Every page has `<html lang>`, a canonical URL, hreflang links to its pl/en/tr versions plus
+  x-default (English), its own title and description (place name + teaser), Open Graph tags (the
+  place's first picture), the Smart App Banner meta, and JSON-LD: `TouristAttraction` (places),
+  `TouristTrip` with an `ItemList` itinerary (walks), `CollectionPage` (lists) and `BreadcrumbList`.
+- The header's PL / EN / TR switch on these pages is made of links to the same page in the other
+  languages; `site.js` sees `data-lang` on its script tag and leaves the page alone (theme toggle
+  only). The "Places" link in the header/footer and the home page's links to the list and the walks
+  use `data-href-pl` / `data-href-tr`, so on `/?lang=pl` they lead to the Polish pages.
+- Pictures are copied from the app bundle (`../app/assets/images/poi/`, via its manifest) to
+  `assets/img/places/<id>-<n>.webp` (long edge 960 px); `src/places-images.json` remembers which
+  source each one was made from, so only changed pictures are converted again (needs Pillow only
+  then). Each picture shows its credit, licence (linked) and Wikimedia source.
+- UI texts of these pages: `src/pages-i18n.json` (en/pl/tr side by side, plural forms as lists).
+  Header, footer and store button texts come from `assets/i18n/<lang>.json`.
+- `sitemap.xml` is generated too: the old entries (/, /privacy/, /support/ and their `?lang=`
+  variants, same lastmod as before) plus every generated page with its hreflang alternates. The
+  generated pages' `<lastmod>` is `PAGES_LASTMOD` in `tools/build_pages.py` - bump it when the
+  content or the page layout changes.
+- The build removes any file under `pl/`, `en/`, `tr/` and `assets/img/places/` that it did not
+  write (those folders are build output only), and `--check` reports stale pages.
+
+**Free/premium cut** - one setting at the top of `tools/build_pages.py`:
+
+```python
+PREMIUM_CUT = {"story_fraction": 0.38, "images": 1}
+```
+
+Places marked `"premium": true` in `pois.json` show about `story_fraction` of their story (cut at the
+nearest paragraph or sentence end; today 30-46 %, median 38 %), then a "Read the full story in the
+app" box with the store button, and only their first `images` picture(s). Places that are free in the
+app (the stops of the two free walks) show everything. `1.0` shows full stories, `0` none; `None`
+for images shows all pictures. Walk pages always list all stops (each linking to its place page).
+
+**Store links with campaign parameters** (App Store Connect > App Analytics > Acquisition >
+Campaigns):
+
+    https://apps.apple.com/app/apple-store/id6833051676?pt=127856308&ct=<campaign>&mt=8
+
+`ct` (max 40 characters): `web-home` on `/` (any language, it is switched by JavaScript),
+`web-pl-home` / `web-tr-home`, `web-<lang>-places` on the lists, `web-<lang>-<place id>` on place
+pages, `web-<lang>-w-<walk id>` on walk pages (e.g. `web-pl-mickiewicz-museum`,
+`web-tr-w-gold-1939`). The longest one today is 36 characters.
+
 ## Editing texts
 
 - All texts live in `assets/i18n/en.json`, `pl.json` and `tr.json` (one file per language, same
@@ -96,14 +156,20 @@ that is switched off while there are no screenshots. To switch it on:
   superlatives, prices). `python3 tools/build.py --check` only checks.
 - Do not edit the generated HTML files directly.
 - Numbers on the page (38 places, 8 walks, 86 pictures, 6 + 2 free stops) come from
-  `../content/pois.json` (2026-11-11); update them when the content changes.
+  `../content/pois.json` (2026-11-11); update them when the content changes. The home page's walk
+  links follow the order of `routes` in `pois.json` (`home.w1Name` = first walk, ...).
+- The place and walk pages are rebuilt from `../app/assets/data/pois.json` (the copy the app
+  ships): after a content change, sync the app's copy and its pictures first
+  (`app/tools/sync_content.sh`), then run `python3 -I tools/build.py`.
 
 ## Checking locally
 
 ```bash
 python3 -m http.server 8000      # then open http://localhost:8000/ (and ?lang=pl, ?lang=tr, ?theme=light)
-python3 tools/check_links.py     # local links, alt texts, balanced tags
-python3 tools/shoot.py [filter]  # screenshots (PL/EN/TR x dark/light x desktop/mobile) into _screens/
+python3 -I tools/check_links.py  # every page: local links and #fragments, alt texts, balanced tags,
+                                 # JSON-LD parses, lang/canonical/hreflang present and pointing at real pages
+python3 tools/shoot.py [filter]  # screenshots (PL/EN/TR x dark/light x desktop/mobile) into _screens/;
+                                 # "gen-" = one phone-width shot per generated page type
 ```
 
 ## Images

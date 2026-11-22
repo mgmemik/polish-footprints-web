@@ -2,7 +2,10 @@
    English is baked into the HTML by tools/build.py; Polish and Turkish are loaded from
    assets/i18n/<lang>.json and swapped into every [data-i18n] / [data-i18n-attr] element.
    Language order: ?lang= in the URL, then the visitor's saved choice, then the browser
-   (pl -> Polish, tr -> Turkish, anything else -> English). */
+   (pl -> Polish, tr -> Turkish, anything else -> English).
+   Pages pre-rendered in one language (place and walk pages, /pl/, /tr/; the script tag has
+   data-lang) are left as they are: their PL/EN/TR switch is made of links to the other versions,
+   and a click on one only remembers the choice. */
 (function () {
   "use strict";
   var SUPPORTED = ["en", "pl", "tr"];
@@ -10,6 +13,7 @@
   var script = document.currentScript;
   var root = (script && script.getAttribute("data-root")) || "";
   var page = (script && script.getAttribute("data-page")) || "home";
+  var fixedLang = (script && script.getAttribute("data-lang")) || "";
   var siteRoot = new URL(root || "./", location.href).href;
   var cache = {};
 
@@ -66,10 +70,16 @@
     });
   }
 
-  /* Links to the other pages of this site keep the language (?lang=pl / ?lang=tr). */
+  /* Links to the other pages of this site keep the language (?lang=pl / ?lang=tr).
+     Links with data-href-pl / data-href-tr go to a page pre-rendered in that language instead. */
   function tagLinks(lang) {
     document.querySelectorAll("a[href]").forEach(function (a) {
       var href = a.getAttribute("href");
+      if (a.hasAttribute("data-href-pl") || a.hasAttribute("data-href-tr")) {
+        if (!a.hasAttribute("data-href-en")) a.setAttribute("data-href-en", href);
+        a.setAttribute("href", a.getAttribute("data-href-" + lang) || a.getAttribute("data-href-en"));
+        return;
+      }
       if (!href || href.charAt(0) === "#" || /^(mailto:|https?:)/i.test(href)) return;
       var url = new URL(href, location.href);
       if (url.href.indexOf(siteRoot) !== 0) return;
@@ -92,7 +102,8 @@
     var canon = document.querySelector("link[rel=canonical]");
     if (canon) {
       var base = canon.getAttribute("data-canonical-base");
-      canon.href = lang === "en" ? base : base + "?lang=" + lang;
+      var own = canon.getAttribute("data-canonical-" + lang);
+      canon.href = lang === "en" ? base : (own || base + "?lang=" + lang);
     }
     var loc = document.querySelector("meta[property='og:locale']");
     if (loc) loc.setAttribute("content", LOCALES[lang]);
@@ -130,10 +141,16 @@
   document.querySelectorAll(".nav-link[data-nav='" + page + "']").forEach(function (a) {
     a.setAttribute("aria-current", "page");
   });
+  initTheme();
+  if (fixedLang) {
+    document.querySelectorAll("a.lang-btn[hreflang]").forEach(function (a) {
+      a.addEventListener("click", function () { store("pf_lang", a.getAttribute("hreflang")); });
+    });
+    return;
+  }
   document.querySelectorAll(".lang-btn").forEach(function (b) {
     b.addEventListener("click", function () { setLang(b.getAttribute("data-lang"), true); });
   });
-  initTheme();
   var initial = pickLang();
   if (initial !== "en") setLang(initial, false);
   else reflect("en");

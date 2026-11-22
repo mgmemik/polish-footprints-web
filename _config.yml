@@ -5,3 +5,4 @@ exclude:
   - tools
   - README.md
   - RESULT.md
+  - RESULT-pages.md

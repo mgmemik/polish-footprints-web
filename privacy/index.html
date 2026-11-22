@@ -18,6 +18,7 @@
           t = window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
         }
         d.setAttribute("data-theme", t);
+        if (d.hasAttribute("data-fixed-lang")) return; /* pages pre-rendered in one language */
         try { l = (q && q.get("lang")) || localStorage.getItem("pf_lang"); } catch (e) {}
         if (l === "pl" || l === "tr" || l === "en") d.lang = l;
       })();
@@ -67,6 +68,7 @@
         </a>
         <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:common.navLabel">
           <a class="nav-link" href=".././" data-nav="home" data-i18n="common.navHome">Home</a>
+          <a class="nav-link" href="../en/places/" data-href-pl="../pl/miejsca/" data-href-tr="../tr/yerler/" data-nav="places" data-i18n="common.navPlaces">Places</a>
           <a class="nav-link" href="../privacy/" data-nav="privacy" data-i18n="common.navPrivacy">Privacy</a>
           <a class="nav-link" href="../support/" data-nav="support" data-i18n="common.navSupport">Support</a>
         </nav>
@@ -220,6 +222,7 @@
         <p data-i18n="common.footerContact">Contact: <a href="mailto:app@save-all.com">app@save-all.com</a></p>
         <nav class="footer-nav" aria-label="Footer" data-i18n-attr="aria-label:common.footerNavLabel">
           <a href=".././" data-i18n="common.navHome">Home</a>
+          <a href="../en/places/" data-href-pl="../pl/miejsca/" data-href-tr="../tr/yerler/" data-i18n="common.navPlaces">Places</a>
           <a href="../privacy/" data-i18n="common.navPrivacy">Privacy</a>
           <a href="../support/" data-i18n="common.navSupport">Support</a>
         </nav>
